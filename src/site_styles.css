@@ -1,0 +1,14 @@
+.background {
+  background-color: rgb(107, 155, 155);
+}
+
+.container {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: row;
+}
+
+.row {
+  background-color: darkgoldenrod;
+  flex: 1;
+}
