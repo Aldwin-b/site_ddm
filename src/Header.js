@@ -1,14 +1,16 @@
 import "./site_styles.css";
 
-const Navbar = () => {
+const Header = () => {
   return (
     <nav className="background">
       <div className="container">
-        <p>ozeiuhhdhhfhizue</p>
-        <p>igfnjhnvnonnern</p>
+        <p>LE FESTIVAL</p>
+        <p>LES MATCHS D'IMPROS</p>
+        <p>LES COURS</p>
+        <p>INFORMATIONS</p>
       </div>
     </nav>
   );
 };
 
-export default Navbar;
+export default Header;
