@@ -8,7 +8,7 @@ const Main = () => {
       </div>
       <div id="text_prog" className="main_text_prog_container">
         <div id="text" className="main_text_container">
-          <p>
+          <span>
             Chaque année, le temps d’un week-end, la magie de la scène illumine
             le regard des spectateur.rice.s. Drôles de Mômes permet au public
             d’accéder à des créations de qualité, et de connaître ces frissons
@@ -19,15 +19,15 @@ const Main = () => {
             bénévoles. Entre plaisir et culture, ce festival avant tout familial
             transporte ses hôtes vers un univers poétique où divertissement et
             détente sont de mise.
-          </p>
-          <p>
+            <br />
+            <br />
             Drôles de Mômes, ce sont aussi des échanges étonnants, un carrefour
             entre les générations, une parenthèse pour se retrouver grâce aux
             arts de la scène.
-          </p>
+          </span>
         </div>
-        <div id="prog" className="prog_container">
-          <button>Programmation 2023</button>
+        <div id="prog" className="button_container">
+          <button className="button">Programmation 2023</button>
         </div>
       </div>
     </div>

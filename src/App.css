@@ -36,3 +36,111 @@
     transform: rotate(360deg);
   }
 }
+
+/*FONTS*/
+
+@font-face {
+  font-family: "P_Black"; /*Can be any text*/
+  src: local("Poppins-Black"),
+    url("./fonts/Poppins/Poppins-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "P_BlackItalic"; /*Can be any text*/
+  src: local("Poppins-BlackItalic"),
+    url("./fonts/Poppins/Poppins-BlackItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "P_Bold"; /*Can be any text*/
+  src: local("Poppins-Bold"),
+    url("./fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "P_BoldItalic"; /*Can be any text*/
+  src: local("Poppins-BoldItalic"),
+    url("./fonts/Poppins/Poppins-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "P_ExtraBold"; /*Can be any text*/
+  src: local("Poppins-ExtraBold"),
+    url("./fonts/Poppins/Poppins-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "P_ExtraBoldItalic"; /*Can be any text*/
+  src: local("Poppins-ExtraBoldItalic"),
+    url("./fonts/Poppins/Poppins-ExtraBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "P_ExtraLight"; /*Can be any text*/
+  src: local("Poppins-ExtraLight"),
+    url("./fonts/Poppins/Poppins-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "P_ExtraLightItalic"; /*Can be any text*/
+  src: local("Poppins-ExtraLightItalic"),
+    url("./fonts/Poppins/Poppins-ExtraLightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "P_Italic"; /*Can be any text*/
+  src: local("Poppins-Italic"),
+    url("./fonts/Poppins/Poppins-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "P_Light"; /*Can be any text*/
+  src: local("Poppins-Light"),
+    url("./fonts/Poppins/Poppins-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "P_LightItalic"; /*Can be any text*/
+  src: local("Poppins-LightItalic"),
+    url("./fonts/Poppins/Poppins-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "P_Medium"; /*Can be any text*/
+  src: local("Poppins-Medium"),
+    url("./fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "P_MediumItalic"; /*Can be any text*/
+  src: local("Poppins-MediumItalic"),
+    url("./fonts/Poppins/Poppins-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "P_Regular"; /*Can be any text*/
+  src: local("Poppins-Regular"),
+    url("./fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "P_SemiBold"; /*Can be any text*/
+  src: local("Poppins-SemiBold"),
+    url("./fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "P_SemiBoldItalic"; /*Can be any text*/
+  src: local("Poppins-SemiBoldItalic"),
+    url("./fonts/Poppins/Poppins-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "P_Medium"; /*Can be any text*/
+  src: local("Poppins-Black"),
+    url("./fonts/Poppins/Poppins-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "P_Thin"; /*Can be any text*/
+  src: local("Poppins-Thin"),
+    url("./fonts/Poppins/Poppins-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "P_ThinItalic"; /*Can be any text*/
+  src: local("Poppins-ThinItalic"),
+    url("./fonts/Poppins/Poppins-ThinItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "R_ItalicVariableFont"; /*Can be any text*/
+  src: local("Rubik-Italic-VariableFont_wght"),
+    url("./fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "R_VariableFont"; /*Can be any text*/
+  src: local("Rubik-VariableFont_wght"),
+    url("./fonts/Rubik/Rubik-VariableFont_wght.ttf") format("truetype");
+}
