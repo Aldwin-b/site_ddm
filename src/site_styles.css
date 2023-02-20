@@ -1,11 +1,42 @@
-.background {
+/*GLOBAL*/
+.global_container {
   background-color: rgb(107, 155, 155);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/*Main*/
+.main_container {
+  display: flex;
 }
 
-.container {
-  background-color: antiquewhite;
+.main_picture_container {
+  flex: 1;
+  background-color: red;
+}
+
+.main_text_prog_container {
+  flex: 2.5;
+  justify-content: "center";
+  margin: 10px;
+  background-color: yellow;
+}
+.main_text_container {
+  flex: 1;
+  background-color: blueviolet;
+}
+
+.prog_container {
+  flex: 1;
+  background-color: brown;
+}
+/*Autre*/
+.header {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
 }
 
 .row {
