@@ -3,18 +3,26 @@
   background-color: rgb(107, 155, 155);
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100%;
+}
+.text {
+  color: white;
+  font-family: "P_Light";
+  font-size: 30px;
 }
 
 /*Main*/
 .main_container {
-  margin-top: 2%;
+  padding: 1%;
   display: flex;
-  flex: 2;
+  height: 80vh;
 }
 
 .main_picture_container {
+  display: flex;
   flex: 1;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 .main_text_prog_container {
@@ -23,34 +31,66 @@
   flex-direction: column;
 }
 .main_text_container {
-  flex: 4;
-  color: white;
-  font-family: "P_Light";
-  font-size: 25px;
+  flex: 1;
   text-align: start;
 }
 
 .button_container {
   flex: 1;
   display: flex;
+  align-items: end;
 }
 
 .button {
-  margin-top: 5%;
-  padding: 1%;
   border-style: none;
   background-color: white;
   color: rgb(107, 155, 155);
   font-size: 30px;
   font-weight: bolder;
-  border-radius: 5px;
+  border-radius: 10px;
+  padding: 1%;
 }
+
+/*Festival*/
+
+.festival_container {
+  display: flex;
+  flex-direction: row;
+  background-color: brown;
+  height: 80vh;
+}
+
+.festival_text {
+  display: flex;
+  flex: 2;
+  background-color: darkblue;
+  text-align: start;
+}
+
+.festival_picture {
+  display: flex;
+  flex: 1;
+  margin: 10px;
+  width: auto;
+  height: auto;
+}
+
 /*Autre*/
 .header {
   display: flex;
   flex-direction: row;
+  align-items: stretch;
+  height: 20vh;
+}
+
+.navBar {
+  display: flex;
+  flex: 1;
+  font-family: "R_VariableFont";
   justify-content: space-around;
   align-items: center;
+  font-size: 30px;
+  font-weight: bold;
   color: white;
 }
 

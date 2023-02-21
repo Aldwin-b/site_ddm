@@ -8,7 +8,7 @@ const Main = () => {
       </div>
       <div id="text_prog" className="main_text_prog_container">
         <div id="text" className="main_text_container">
-          <span>
+          <span className="text">
             Chaque année, le temps d’un week-end, la magie de la scène illumine
             le regard des spectateur.rice.s. Drôles de Mômes permet au public
             d’accéder à des créations de qualité, et de connaître ces frissons
@@ -27,7 +27,7 @@ const Main = () => {
           </span>
         </div>
         <div id="prog" className="button_container">
-          <button className="button">Programmation 2023</button>
+          <button className="button">PROGRAMMATION 2023</button>
         </div>
       </div>
     </div>

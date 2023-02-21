@@ -1,8 +1,7 @@
 import "./App.css";
 import Header from "./Header.js";
 import Main from "./Main.js";
-
-import "./fonts/Poppins/Poppins-Regular.ttf";
+import Festival from "./Festival";
 
 function App() {
   return (
