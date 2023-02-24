@@ -8,7 +8,7 @@ function App() {
     <div className="global_container">
       <Header />
       <div className="App">
-        <Main />
+        <Festival />
       </div>
     </div>
   );

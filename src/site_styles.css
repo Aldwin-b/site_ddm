@@ -8,7 +8,13 @@
 .text {
   color: white;
   font-family: "P_Light";
-  font-size: 30px;
+  font-size: 28px;
+}
+.title {
+  color: white;
+  font-size: 75px;
+  font-weight: bolder;
+  font-family: "R_VariableFont";
 }
 
 /*Main*/
@@ -16,6 +22,7 @@
   padding: 1%;
   display: flex;
   height: 80vh;
+  padding-bottom: 5%;
 }
 
 .main_picture_container {
@@ -38,7 +45,7 @@
 .button_container {
   flex: 1;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
 }
 
 .button {
@@ -56,23 +63,21 @@
 .festival_container {
   display: flex;
   flex-direction: row;
-  background-color: brown;
-  height: 80vh;
+  padding-left: 2.5%;
+  height: max-content;
 }
 
 .festival_text {
   display: flex;
   flex: 2;
-  background-color: darkblue;
+  flex-direction: column;
   text-align: start;
 }
 
 .festival_picture {
   display: flex;
   flex: 1;
-  margin: 10px;
-  width: auto;
-  height: auto;
+  height: 80vh;
 }
 
 /*Autre*/
@@ -95,6 +100,5 @@
 }
 
 .row {
-  background-color: darkgoldenrod;
   flex: 1;
 }

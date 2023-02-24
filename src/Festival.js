@@ -4,6 +4,7 @@ const Festival = () => {
   return (
     <div className="festival_container">
       <div id="text" className="festival_text">
+        <span className="title">Le festival</span>
         <span className="text">
           Drôle de Mômes, c’est une organisation associative et bénévole :
           depuis plus de dix-sept ans, Drôles de Mômes est géré, organisé,
