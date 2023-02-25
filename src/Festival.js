@@ -2,6 +2,7 @@ import festival_pic from "./images/festival_pic.png";
 import festival_pic_1 from "./images/festival_pic_1.jpg";
 import festival_pic_2 from "./images/festival_pic_2.jpg";
 import festival_pic_3 from "./images/festival_pic_3.jpg";
+import logoW from "./images/logo_W.png";
 
 const Festival = () => {
   return (
@@ -85,29 +86,78 @@ const Festival = () => {
       </div>
       <div className="festival_container_3">
         <div className="festival_row">
-          <span>Territoire</span>
-        </div>
-        <div className="festival_row">
-          <div className="festival_sub_column">
-            <div className="festival_sub_row">
-              <span>Communication</span>
-            </div>
-            <div className="festival_sub_row">
-              <span>Décors</span>
-            </div>
-          </div>
-          <div className="festival_sub_column"></div>
-          <div className="festival_sub_column">
-            <div className="festival_sub_row">
-              <span>Tri des déchets</span>
-            </div>
-            <div className="festival_sub_row">
-              <span>Toilettes sèches</span>
+          <div className="festival_textbox">
+            <div className="title3">Territoire</div>
+            <div className="text_small_W">
+              Dans l’idée de favoriser l’emploi et l’économie, nous nous
+              entourons de fournisseurs locaux, concernés par notre démarche
+              écologique. Cela permet de réduire l’émission de gaz à effet de
+              serre lors des déplacements et transports du matériel. Cet acte
+              contribue à stimuler le tissu local et favorise notre implantation
+              en terre montendraise.
             </div>
           </div>
         </div>
+        <div className="festival_row2">
+          <div className="festival_sub_column">
+            <div className="festival_sub_row">
+              <div>
+                <div className="title3">Communication</div>
+                <div className="text_small_W">
+                  Nous renforçons notre présence sur Internet grâce à notre site
+                  et aux réseaux sociaux. Nous pouvons ainsi réduire les
+                  quantités d’impression pour l’affichage, tout en s’assurant
+                  d’une diffusion large de l’événement.
+                </div>
+              </div>
+            </div>
+            <div className="festival_sub_row">
+              <div className="title3">Décors</div>
+              <div className="text_small_W">
+                Enfin, la décoration du festival est réalisée à partir de
+                matériaux de récupération. Une grande partie du matériel
+                technique est mis à disposition par les collectivités et les
+                partenaires afin de privilégier la mise en commun.
+              </div>
+            </div>
+          </div>
+          <div className="festival_sub_column">
+            <img src={logoW} alt="" />
+          </div>
+          <div className="festival_sub_column">
+            <div className="festival_sub_row">
+              <div className="title3">Tri des déchets</div>
+              <div className="text_small_W">
+                Pour cette quinzième édition, nous voulons mettre l’accent sur
+                le tri des déchets et allons mettre en place des poubelles à
+                deux bacs avec des panneaux explicatifs. D’autre part, nous
+                voulons limiter au maximum le gaspillage, ainsi toute la
+                vaisselle de notre espace bénévole est réutilisable et nos
+                déchets alimentaires sont compostés !
+              </div>
+            </div>
+            <div className="festival_sub_row">
+              <div className="title3">Toilettes sèches</div>
+              <div className="text_small_W">
+                Notre équipe tient à disposition, des toilettes sèches, symboles
+                de notre engagement pour le respect de l’environnement. Un texte
+                descriptif invite le public à prendre soin de ce lieu, ce qui
+                constitue une démarche de sensibilisation.
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="festival_row">
-          <span>Verres réutilisables</span>
+          <div className="festival_textbox">
+            <div className="title3"> Verres réutilisables</div>
+            <div className="text_small_W">
+              À maintes reprises, nous avons souhaité que les boissons soient
+              servies dans des verres consignés. Il y a six ans, nous avons mis
+              en service 1000 verres réutilisables. Ils ont de nouveau servi
+              pour les éditions suivantes, et nous n’en commandons que peu de
+              nouveaux chaque année.
+            </div>
+          </div>
         </div>
       </div>
     </div>

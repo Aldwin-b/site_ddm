@@ -10,6 +10,11 @@
   font-family: "P_Light";
   font-size: 28px;
 }
+.text_small_W {
+  color: white;
+  font-family: "P_Light";
+}
+
 .text_B {
   color: black;
   font-family: "P_Light";
@@ -27,6 +32,10 @@
   font-size: 35px;
   font-weight: bold;
   font-family: "R_VariableFont";
+}
+.title3 {
+  color: white;
+  font-family: "P_SemiBold";
 }
 
 /*Main*/
@@ -80,13 +89,12 @@
   flex-direction: row;
   padding-left: 2.5%;
   padding-right: 2.5%;
-  padding-bottom: 2%;
-  height: max-content;
+  height: 100vh;
   background: linear-gradient(
     180deg,
     rgb(107, 155, 155) 0%,
-    rgb(107, 155, 155) 92%,
-    white 100%
+    rgb(107, 155, 155) 95%,
+    rgb(132, 163, 163) 100%
   );
 }
 
@@ -95,23 +103,54 @@
   flex-direction: row;
   flex: 1;
   align-items: baseline;
+  height: 100vh;
   background: linear-gradient(
     180deg,
-    white 0%,
-    white 98%,
+    rgb(132, 163, 163) 0%,
+    white 5%,
+    white 95%,
     rgb(107, 155, 155) 100%
   );
+}
+
+.festival_container_3 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .festival_column {
   display: flex;
   flex: 1;
-  height: 100vh;
   flex-direction: column;
-  align-items: center;
   justify-content: space-evenly;
   padding: 1%;
 }
+.festival_sub_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  margin: 5px;
+}
+.festival_row {
+  display: flex;
+  flex: 1;
+}
+
+.festival_row2 {
+  display: flex;
+  flex: 2;
+}
+.festival_textbox {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .festival_title2_container {
   display: flex;
   flex: 1;
