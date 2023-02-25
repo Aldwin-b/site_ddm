@@ -6,7 +6,9 @@ import Festival from "./Festival";
 function App() {
   return (
     <div className="global_container">
-      <Header />
+      <div className="Header">
+        <Header />
+      </div>
       <div className="App">
         <Festival />
       </div>

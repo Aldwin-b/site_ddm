@@ -5,13 +5,13 @@ const Header = () => {
   return (
     <nav>
       <div className="header">
-        <span className="navBar">LE FESTIVAL</span>
-        <span className="navBar">LES MATCHS D'IMPROS</span>
-        <span className="navBar">
+        <div className="navBar">LE FESTIVAL</div>
+        <div className="navBar">LES MATCHS D'IMPROS</div>
+        <div className="navBar">
           <img className="logo" src={ddm_pic} alt="" />
-        </span>
-        <span className="navBar">LES COURS</span>
-        <span className="navBar">INFORMATIONS</span>
+        </div>
+        <div className="navBar">LES COURS</div>
+        <div className="navBar">INFORMATIONS</div>
       </div>
     </nav>
   );
