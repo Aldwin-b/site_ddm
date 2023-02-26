@@ -158,6 +158,66 @@ const Festival = () => {
           </div>
         </div>
       </div>
+      <div className="festival_container_4">
+        <div className="festival_column_pictures">
+          <img src={festival_pic_1} className="temp_pic_wrapped" />
+          <img src={festival_pic_1} className="temp_pic_wrapped" />
+          <img src={festival_pic_1} className="temp_pic_wrapped" />
+        </div>
+        <div className="festival_column_text">
+          <div className="festival_row_text">
+            <div className="title2">
+              Un festival aussi consacré aux troupes d’enfants et jeunes
+              amateurs
+            </div>
+            <div className="text_B">
+              Notre volonté est de permettre à l’enfant d’être le maître de
+              cérémonie, de créer un espace de rencontre et d’expression au
+              travers du spectacle vivant. Dans un désir de pédagogie, nous
+              voulons que les jeunes découvrent ce qu’est l’art théâtral dans sa
+              globalité et qu’ils deviennent les garants de la culture de
+              demain. La place est largement laissée à l’enfant, c’est lui qui
+              aménage et anime le lieu, il est acteur, spectateur et
+              organisateur. Ainsi, depuis la création du festival, les jeunes
+              organisateurs ont eu l’occasion d’apprendre ce qu’engendre la mise
+              en place d’une telle aventure : se rencontrer, organiser un
+              travail d’équipe, définir des objectifs, gérer un groupe et
+              promouvoir son spectacle. Les troupes originaires de notre
+              association sont bien sûr représentées mais nous invitons de
+              nombreuses autres compagnies extérieures dont la provenance
+              s’étend sur toute la France.
+            </div>
+          </div>
+          <div className="festival_row_text">
+            <div className="title2">
+              Un événement qui s’adresse à toute sorte de public
+            </div>
+            <div className="text_B">
+              Nous ne souhaitons pas seulement viser le jeune public mais tous
+              ceux qui aiment le théâtre sous toutes ses formes, ainsi que tous
+              ceux qui sont prêts à le découvrir. Les spectacles proposés
+              ciblent des spectateurs de tous âges. Le public du festival est
+              très hétérogène et familial, tant par son âge (de 5 à 80 ans) que
+              par la mixité sociale que l’on peut constater. Pour cette
+              quinzième édition, le festival Drôles de Mômes posera ses valises
+              sur le site du lac de Montendre. Légitimement, nous nous sommes
+              questionnés sur l’impact d’un tel événement sur l’environnement.
+            </div>
+          </div>
+          <div className="festival_row_text">
+            <div className="title2">Un évènement éco-responsable</div>
+            <div className="text_B">
+              constituer une organisation qui vise à économiser les ressources
+              naturelles ; réduire l’empreinte écologique pour préserver
+              l’environnement ; et sensibiliser le public avec une démarche
+              éco-responsable. Depuis plusieurs années, nous abordons le
+              festival selon la démarche suivante : Nous mettons ainsi en place,
+              plusieurs actions qui marquent notre volonté d’inscrire le
+              festival dans une logique durable
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./Header.js";
 import Main from "./Main.js";
 import Festival from "./Festival";
+import festival_pic_1 from "./images/festival_pic_1.jpg";
 
 function App() {
   return (
