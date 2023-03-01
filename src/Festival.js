@@ -84,7 +84,7 @@ const Festival = () => {
       </div>
       <div className="festival_container_3">
         <div className="festival_row">
-          <div className="festival_textbox">
+          <div className="textbox">
             <div className="title3">Territoire</div>
             <div className="text_small_W">
               Dans l’idée de favoriser l’emploi et l’économie, nous nous
@@ -98,7 +98,7 @@ const Festival = () => {
         </div>
         <div className="festival_row2">
           <div className="festival_sub_column">
-            <div className="festival_sub_row">
+            <div className="textbox">
               <div>
                 <div className="title3">Communication</div>
                 <div className="text_small_W">
@@ -109,7 +109,7 @@ const Festival = () => {
                 </div>
               </div>
             </div>
-            <div className="festival_sub_row">
+            <div className="textbox">
               <div className="title3">Décors</div>
               <div className="text_small_W">
                 Enfin, la décoration du festival est réalisée à partir de
@@ -123,7 +123,7 @@ const Festival = () => {
             <img src={logoW} className="logoW" alt="" />
           </div>
           <div className="festival_sub_column">
-            <div className="festival_sub_row">
+            <div className="textbox">
               <div className="title3">Tri des déchets</div>
               <div className="text_small_W">
                 Pour cette quinzième édition, nous voulons mettre l’accent sur
@@ -134,7 +134,7 @@ const Festival = () => {
                 déchets alimentaires sont compostés !
               </div>
             </div>
-            <div className="festival_sub_row">
+            <div className="textbox">
               <div className="title3">Toilettes sèches</div>
               <div className="text_small_W">
                 Notre équipe tient à disposition, des toilettes sèches, symboles
@@ -146,7 +146,7 @@ const Festival = () => {
           </div>
         </div>
         <div className="festival_row">
-          <div className="festival_textbox">
+          <div className="textbox">
             <div className="title3"> Verres réutilisables</div>
             <div className="text_small_W">
               À maintes reprises, nous avons souhaité que les boissons soient

@@ -3,18 +3,18 @@ import pic from "./images/festival_pic_1.jpg";
 const MatchsImpro = () => {
   return (
     <div className="match_container">
-      <div className="bmatch_column1">
+      <div className="match_column">
         <div className="match_title">
           <span className="title">Les matchs d'impro</span>
         </div>
         <div className="match_text">
-          <span className="text_W">
+          <div className="text_W">
             <br />
             Le match d’improvisation est un grand traditionnel du festival,
             présent depuis sa première édition en 2005 !
             <br />
-          </span>
-          <span className="text_W">
+          </div>
+          <div className="text_W">
             <br />
             Chaque année depuis, plusieurs équipes s’affrontent en
             improvisations courtes, mixtes ou comparées, à l’aide de thèmes et
@@ -23,13 +23,13 @@ const MatchsImpro = () => {
             jury. A l’issu des impros, le public départage les équipes via
             l’applaudimètre ou via des cartons aux couleurs des équipes.
             <br />
-          </span>
+          </div>
         </div>
       </div>
-      <div className="match_column2">
-        <div className="match_container_3">
-          <div className="match_row">
-            <div className="match_textbox">
+      <div className="match_column">
+        <div className="match_circle">
+          <div className="row">
+            <div className="textbox">
               <div className="title3">Improvisation</div>
               <div className="text_small_W">
                 Ici, courte scène ou histoire (entre 3 et 5 min) créée sur le
@@ -38,9 +38,9 @@ const MatchsImpro = () => {
               </div>
             </div>
           </div>
-          <div className="match_row2">
-            <div className="match_sub_column">
-              <div className="match_sub_row">
+          <div className="double_row">
+            <div className="sub_column">
+              <div className="textbox">
                 <div>
                   <div className="title3">Impro comparée</div>
                   <div className="text_small_W">
@@ -49,7 +49,7 @@ const MatchsImpro = () => {
                   </div>
                 </div>
               </div>
-              <div className="match_sub_row">
+              <div className="textbox">
                 <div className="title3">Thème</div>
                 <div className="text_small_W">
                   Sujet à respecter pour l’improvisation. Exemples donnés en
@@ -59,18 +59,18 @@ const MatchsImpro = () => {
                 </div>
               </div>
             </div>
-            <div className="match_sub_column">
+            <div className="sub_column">
               <div className="title">Vocabulaire</div>
             </div>
-            <div className="match_sub_column">
-              <div className="match_sub_row">
+            <div className="sub_column">
+              <div className="textbox">
                 <div className="title3">Contrainte</div>
                 <div className="text_small_W">
                   Exemples : Sitcom / Comédie musicale / Western / Ni oui ni non
                   / Jouer sur scène et dans le public, etc.
                 </div>
               </div>
-              <div className="match_sub_row">
+              <div className="textbox">
                 <div className="title3">Jury</div>
                 <div className="text_small_W">
                   C’est lui qui présente le match, dicte thèmes et contraintes,
@@ -81,8 +81,8 @@ const MatchsImpro = () => {
               </div>
             </div>
           </div>
-          <div className="match_row">
-            <div className="match_textbox">
+          <div className="row">
+            <div className="textbox">
               <div className="title3"> Applaudimètre</div>
               <div className="text_small_W">
                 On demande au public d’applaudir pour une équipe, puis pour
