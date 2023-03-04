@@ -1,8 +1,9 @@
 import "./App.css";
 import Festival from "./Festival";
+import MatchsImpro from "./MatchsImpro";
 import Header from "./Header.js";
 //import Main from "./Main.js";
-import MatchsImpro from "./MatchsImpro";
+import Cours from "./Cours";
 
 function App() {
   return (

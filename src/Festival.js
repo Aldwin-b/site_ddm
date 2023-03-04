@@ -160,9 +160,9 @@ const Festival = () => {
       </div>
       <div className="festival_container_4">
         <div className="festival_column_pictures">
-          <img src={festival_pic_1} className="temp_pic_wrapped" />
-          <img src={festival_pic_1} className="temp_pic_wrapped" />
-          <img src={festival_pic_1} className="temp_pic_wrapped" />
+          <img src={festival_pic_1} className="temp_pic_wrapped" alt="" />
+          <img src={festival_pic_1} className="temp_pic_wrapped" alt="" />
+          <img src={festival_pic_1} className="temp_pic_wrapped" alt="" />
         </div>
         <div className="festival_column_text">
           <div className="festival_row_text">
@@ -207,13 +207,22 @@ const Festival = () => {
           <div className="festival_row_text">
             <div className="title2">Un évènement éco-responsable</div>
             <div className="text_B">
-              constituer une organisation qui vise à économiser les ressources
-              naturelles ; réduire l’empreinte écologique pour préserver
-              l’environnement ; et sensibiliser le public avec une démarche
-              éco-responsable. Depuis plusieurs années, nous abordons le
-              festival selon la démarche suivante : Nous mettons ainsi en place,
-              plusieurs actions qui marquent notre volonté d’inscrire le
-              festival dans une logique durable
+              Depuis plusieurs années, nous abordons le festival selon la
+              démarche suivante :
+              <ul>
+                <li>
+                  constituer une organisation qui vise à économiser les
+                  ressources naturelles
+                </li>
+                <li>
+                  réduire l’empreinte écologique pour préserver l’environnement
+                </li>
+                <li>
+                  sensibiliser le public avec une démarche éco-responsable.
+                </li>
+              </ul>
+              Nous mettons ainsi en place, plusieurs actions qui marquent notre
+              volonté d’inscrire le festival dans une logique durable
             </div>
           </div>
         </div>
