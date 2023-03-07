@@ -5,7 +5,10 @@
   min-height: 100vh;
   flex-direction: column;
 }
-
+.container {
+  display: flex;
+  flex: 1;
+}
 .text_W {
   color: white;
   font-family: "P_Light";
@@ -299,7 +302,7 @@ Bénévoles
 /*
 MATCHS D'IMPROS
 */
-.match_cotainer {
+.match_container {
   display: flex;
   flex-direction: column;
 }
@@ -359,7 +362,7 @@ MATCHS D'IMPROS
 }
 .pic_edition {
   padding: 1%;
-  min-width: 20vw;
+  max-width: 20vw;
 }
 
 /*
