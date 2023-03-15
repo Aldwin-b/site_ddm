@@ -49,9 +49,9 @@ const Tarifs = () => {
         </div>
       </div>
       <div className="tarifs_band">
-        <img></img>
+        <img src={pic} alt=""></img>
         <span></span>
-        <img></img>
+        <img alt=""></img>
       </div>
     </div>
   );
