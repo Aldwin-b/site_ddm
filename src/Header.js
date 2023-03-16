@@ -19,9 +19,11 @@ const Header = () => {
             <NavDropdown.Item href="/matchsimpro">Les matchs</NavDropdown.Item>
           </NavDropdown>
         </div>
-        <Navbar.Brand href="/">
-          <img className="logo" src={ddm_pic} alt="" />
-        </Navbar.Brand>
+        <div className="navBar">
+          <Navbar.Brand href="/">
+            <img className="logo" src={ddm_pic} alt="" />
+          </Navbar.Brand>
+        </div>
         <div className="navBar">
           <NavDropdown title="LES COURS" id="basic-nav-dropdown">
             <NavDropdown.Item href="/cours">

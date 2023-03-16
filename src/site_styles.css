@@ -448,6 +448,8 @@ COURS
   display: flex;
   flex: 1;
   height: auto;
+  padding-left: 2%;
+  padding-right: 2%;
   align-items: center;
 }
 .logo {
@@ -459,12 +461,14 @@ COURS
 .navBar {
   display: flex;
   flex: 1;
-  font-family: "R_VariableFont";
+  min-width: 20%;
   justify-content: space-around;
+  font-family: "R_VariableFont";
   align-items: center;
   font-size: 1.5vw;
   font-weight: bold;
   color: white;
+  background-color: darkgoldenrod;
 }
 
 .row {
