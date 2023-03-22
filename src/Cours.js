@@ -60,10 +60,14 @@ const Cours = () => {
             <img src={pic} className="cours_big" alt="" />
           </div>
           <div className="cours_small_photo">
-            <img src={pic} className="cours_small" alt="" />
-            <img src={pic} className="cours_small" alt="" />
-            <img src={pic} className="cours_small" alt="" />
-            <img src={pic} className="cours_small" alt="" />
+            <div className="cours_small_photo_row">
+              <img src={pic} className="cours_small" alt="" />
+              <img src={pic} className="cours_small" alt="" />
+            </div>
+            <div className="cours_small_photo_row">
+              <img src={pic} className="cours_small" alt="" />
+              <img src={pic} className="cours_small" alt="" />
+            </div>
           </div>
         </div>
       </div>

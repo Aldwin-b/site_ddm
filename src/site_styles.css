@@ -92,9 +92,6 @@
   margin-right: auto;
 }
 
-.link {
-}
-
 /*Main*/
 .main_container {
   display: flex;
@@ -152,12 +149,11 @@
   height: fit-content;
   background-color: rgb(107, 155, 155);
   padding-bottom: 1%;
-  min-height: 80vh;
+  min-height: 75vh;
 }
 
 .festival_container_2 {
   display: flex;
-  flex-direction: co;
   flex: 1;
   padding: 2.5%;
   height: fit-content;
@@ -307,6 +303,8 @@ MATCHS D'IMPROS
 */
 .match_container {
   display: flex;
+  flex: 1;
+  min-height: 80vh;
   flex-direction: column;
 }
 .match_rules_container {
@@ -343,6 +341,7 @@ MATCHS D'IMPROS
 /*Editions*/
 
 .edition_container {
+  flex: 1;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -378,9 +377,11 @@ COURS
   padding-right: 2.5%;
 }
 .cours_container1 {
-  height: 80vh;
+  flex: 1;
+  min-height: 80vh;
 }
 .cours_container2 {
+  flex: 1;
   padding-top: 2%;
   min-height: 100vh;
 }
@@ -421,39 +422,48 @@ COURS
 
 .cours_photos {
   display: flex;
-  flex-direction: row;
 }
 .cours_main_photo {
-  display: flex;
   flex: 1;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 .cours_big {
-  height: 100%;
-  width: auto;
+  min-width: 38vw;
+  max-width: 40vw;
 }
 .cours_small_photo {
   flex: 1;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
 }
+.cours_small_photo_row {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+}
+
 .cours_small {
-  padding-bottom: 1%;
+  max-width: 20vw;
 }
 /*Autre*/
 .header {
   display: flex;
-  flex: 1;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
   height: auto;
-  padding-left: 2%;
-  padding-right: 2%;
   align-items: center;
+  min-height: 25vh;
 }
 .logo {
-  height: 25vh;
+  display: flex;
+  width: auto;
+  height: auto;
+  max-width: 15vw;
+  max-height: 25vh;
 }
 .logoW {
   width: 100%;
@@ -461,16 +471,31 @@ COURS
 .navBar {
   display: flex;
   flex: 1;
-  min-width: 20%;
+  min-width: 10vw;
   justify-content: space-around;
-  font-family: "R_VariableFont";
-  align-items: center;
-  font-size: 1.5vw;
-  font-weight: bold;
-  color: white;
-  background-color: darkgoldenrod;
 }
 
+.navBar_text {
+  display: flex;
+  justify-content: center;
+  font-family: "R_VariableFont";
+  font-size: 1.5vw;
+  padding: 1%;
+  font-weight: bold;
+  color: white;
+}
+.navBar_text:hover {
+  background-color: #9bbabb;
+  border-radius: 10px;
+}
+div.dropdown-menu.show {
+  background-color: #9bbabb;
+  border: 0;
+}
+
+a.dropdown-item {
+  color: #ffffff;
+}
 .row {
   flex: 1;
 }

@@ -9,15 +9,23 @@ const Header = () => {
     <nav>
       <div className="header">
         <div className="navBar">
-          <NavDropdown title="LE FESTIVAL" id="basic-nav-dropdown">
-            <NavDropdown.Item href="/festival">Le festival</NavDropdown.Item>
-            <NavDropdown.Item href="/benevoles">Les bénévoles</NavDropdown.Item>
-          </NavDropdown>
+          <div className="navBar_text">
+            <NavDropdown title="LE FESTIVAL" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/festival">Le festival</NavDropdown.Item>
+              <NavDropdown.Item href="/benevoles">
+                Les bénévoles
+              </NavDropdown.Item>
+            </NavDropdown>
+          </div>
         </div>
         <div className="navBar">
-          <NavDropdown title="LES MATCHS D'IMPROS" id="basic-nav-dropdown">
-            <NavDropdown.Item href="/matchsimpro">Les matchs</NavDropdown.Item>
-          </NavDropdown>
+          <div className="navBar_text">
+            <NavDropdown title="LES MATCHS D'IMPROS" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/matchsimpro">
+                Les matchs
+              </NavDropdown.Item>
+            </NavDropdown>
+          </div>
         </div>
         <div className="navBar">
           <Navbar.Brand href="/">
@@ -25,17 +33,21 @@ const Header = () => {
           </Navbar.Brand>
         </div>
         <div className="navBar">
-          <NavDropdown title="LES COURS" id="basic-nav-dropdown">
-            <NavDropdown.Item href="/cours">
-              Présentation des cours
-            </NavDropdown.Item>
-          </NavDropdown>{" "}
+          <div className="navBar_text">
+            <NavDropdown title="LES COURS" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/cours">
+                Présentation des cours
+              </NavDropdown.Item>
+            </NavDropdown>
+          </div>
         </div>
         <div className="navBar">
-          <NavDropdown title="INFORMATIONS PRATIQUES" id="basic-nav-dropdown">
-            <NavDropdown.Item href="/WIP">Tarifs</NavDropdown.Item>
-            <NavDropdown.Item href="/WIP">Comment venir ?</NavDropdown.Item>
-          </NavDropdown>{" "}
+          <div className="navBar_text">
+            <NavDropdown title="INFORMATIONS PRATIQUES" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/WIP">Tarifs</NavDropdown.Item>
+              <NavDropdown.Item href="/WIP">Comment venir ?</NavDropdown.Item>
+            </NavDropdown>
+          </div>
         </div>
       </div>
     </nav>
