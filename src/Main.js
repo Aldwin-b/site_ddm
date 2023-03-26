@@ -1,10 +1,10 @@
-import main_picture from "./images/main_picture.png";
+import main_picture from "./images/main.jpg";
 
 const Main = () => {
   return (
     <div className="main_container">
       <div id="main_picture" className="main_picture_container">
-        <img src={main_picture} alt="" />
+        <img src={main_picture} className="main_picture" alt="" />
       </div>
       <div id="text_prog" className="main_text_prog_container">
         <div id="text" className="main_text_container">

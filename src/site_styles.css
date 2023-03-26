@@ -94,21 +94,24 @@
 
 /*Main*/
 .main_container {
+  padding-top: 1%;
   display: flex;
   flex: 1;
 }
 
-.main_container_picture {
+.main_picture_container {
   display: flex;
   flex: 1;
   padding-right: 2.5%;
   padding-left: 2.5%;
+  justify-content: center;
 }
 .main_picture {
-  max-width: 100%;
+  max-height: 70vh;
+  object-fit: cover;
 }
 
-.main_container_text_prog {
+.main_text_prog_container {
   display: flex;
   padding-right: 2.5%;
   padding-left: 2.5%;
@@ -117,7 +120,7 @@
   text-align: start;
   justify-content: space-between;
 }
-.main_container_text {
+.main_text_container {
   display: flex;
   flex: 1;
   text-align: start;
