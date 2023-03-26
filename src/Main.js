@@ -3,10 +3,10 @@ import main_picture from "./images/main_picture.png";
 const Main = () => {
   return (
     <div className="main_container">
-      <div id="main_picture" className="main_container_picture">
-        <img src={main_picture} className="main_picture" alt="" />
+      <div id="main_picture" className="main_picture_container">
+        <img src={main_picture} alt="" />
       </div>
-      <div id="text_prog" className="main_container_text_prog">
+      <div id="text_prog" className="main_text_prog_container">
         <div id="text" className="main_text_container">
           <span className="text_W">
             Chaque année, le temps d’un week-end, la magie de la scène illumine

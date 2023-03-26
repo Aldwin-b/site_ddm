@@ -17,7 +17,7 @@
 .text_small_W {
   color: white;
   font-family: "P_Light";
-  font-size: 1.1vw;
+  font-size: 1vw;
 }
 
 .text_verysmall_W {
@@ -124,6 +124,7 @@
 }
 
 .button_container {
+  margin-top: 10%;
   display: flex;
   align-items: flex-end;
 }
@@ -178,8 +179,7 @@
 .festival_container_4 {
   display: flex;
   flex-direction: row;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
+  padding: 2.5%;
   flex: 1;
   height: fit-content;
   min-height: 100vh;
@@ -222,6 +222,10 @@
   display: flex;
   flex: 2;
 }
+
+.festival_row_text {
+  text-align: start;
+}
 .festival_textbox {
   display: flex;
   flex: 1;
@@ -259,6 +263,16 @@
 }
 .festival_picture {
   max-width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.festival_pic_wrapped {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: 20vw;
+  margin-bottom: -15%;
 }
 
 /*
@@ -293,9 +307,10 @@ Bénévoles
 }
 .pic_bene {
   padding: 0.5%;
-  display: grid;
-  max-height: 30vh;
-  max-width: 15vw;
+  object-fit: cover;
+  display: flex;
+  aspect-ratio: 1/1;
+  height: 30vh;
 }
 
 /*
@@ -357,14 +372,21 @@ MATCHS D'IMPROS
   text-align: start;
 }
 .edition_photos {
+  padding-top: 2%;
   display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex: 2.5;
+  justify-content: center;
+  align-items: center;
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+
+  max-width: 57.7vw;
 }
 .pic_edition {
-  padding: 1%;
-  max-width: 20vw;
+  max-height: 75vh;
+  object-fit: contain;
 }
 
 /*
@@ -381,6 +403,8 @@ COURS
   min-height: 80vh;
 }
 .cours_container2 {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   padding-top: 2%;
   min-height: 100vh;
@@ -395,16 +419,12 @@ COURS
 
 .cours_text1 {
   flex: 1;
-  border-color: white;
-  border-style: solid;
-  border-top: none;
-  border-bottom: none;
-  border-left: none;
   text-align: start;
   padding-right: 2.5%;
 }
 .cours_text2 {
   flex: 2;
+
   text-align: start;
   border-color: white;
   border-style: solid;
@@ -418,10 +438,12 @@ COURS
 .cours_text3 {
   text-align: start;
   padding-bottom: 1%;
+  flex: 1;
 }
 
 .cours_photos {
   display: flex;
+  flex: 2;
 }
 .cours_main_photo {
   flex: 1;
@@ -431,7 +453,7 @@ COURS
 }
 .cours_big {
   min-width: 38vw;
-  max-width: 40vw;
+  max-width: 48vw;
 }
 .cours_small_photo {
   flex: 1;
@@ -442,16 +464,16 @@ COURS
   flex: 1;
   display: flex;
   justify-content: space-around;
-  padding-bottom: 2vh;
-  padding-top: 2vh;
 }
 
 .cours_small {
   max-width: 20vw;
+  object-fit: contain;
 }
 /*Autre*/
 .header {
   display: flex;
+  flex-direction: row;
   padding-left: 2.5%;
   padding-right: 2.5%;
   height: auto;
@@ -473,6 +495,8 @@ COURS
   flex: 1;
   min-width: 10vw;
   justify-content: space-around;
+
+  position: relative;
 }
 
 .navBar_text {
@@ -486,7 +510,6 @@ COURS
 }
 .navBar_text:hover {
   background-color: #9bbabb;
-  border-radius: 10px;
 }
 div.dropdown-menu.show {
   background-color: #9bbabb;
@@ -503,13 +526,8 @@ a.dropdown-item {
   display: flex;
   flex: 1;
   max-width: 30vw;
-  max-height: 50%;
+  height: 45%;
   border-radius: 50%;
+  object-fit: cover;
   aspect-ratio: 1/1;
-}
-
-.temp_pic_wrapped {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
 }

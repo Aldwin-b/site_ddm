@@ -1,5 +1,9 @@
 import "./site_styles.css";
-import pic from "./images/festival_pic_1.jpg";
+import pic1 from "./images/lescours1.jpg";
+import pic2 from "./images/lescours2.jpg";
+import pic3 from "./images/lescours3.jpg";
+import pic4 from "./images/lescours4.jpg";
+import pic5 from "./images/lescours5.jpg";
 
 const Cours = () => {
   return (
@@ -57,16 +61,16 @@ const Cours = () => {
         </div>
         <div className="cours_photos">
           <div className="cours_main_photo">
-            <img src={pic} className="cours_big" alt="" />
+            <img src={pic1} className="cours_big" alt="" />
           </div>
           <div className="cours_small_photo">
             <div className="cours_small_photo_row">
-              <img src={pic} className="cours_small" alt="" />
-              <img src={pic} className="cours_small" alt="" />
+              <img src={pic2} className="cours_small" alt="" />
+              <img src={pic3} className="cours_small" alt="" />
             </div>
             <div className="cours_small_photo_row">
-              <img src={pic} className="cours_small" alt="" />
-              <img src={pic} className="cours_small" alt="" />
+              <img src={pic4} className="cours_small" alt="" />
+              <img src={pic5} className="cours_small" alt="" />
             </div>
           </div>
         </div>

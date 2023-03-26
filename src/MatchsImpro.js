@@ -1,4 +1,14 @@
-import pic from "./images/festival_pic_1.jpg";
+import pic1 from "./images/match1.jpg";
+import pic2 from "./images/match2.jpg";
+import pic3 from "./images/match3.jpg";
+import pic4 from "./images/match4.jpg";
+import pic5 from "./images/match5.jpg";
+import pic6 from "./images/match6.jpg";
+import pic7 from "./images/match7.jpg";
+import pic8 from "./images/match8.jpg";
+
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const MatchsImpro = () => {
   return (
@@ -104,19 +114,39 @@ const MatchsImpro = () => {
         </div>
         <div className="edition_text">
           <span className="text_G">
-            Les Combinés Nordiques du Pacifiques (équipe rouge) affrontaient les
+            Les Combinés Nordiques du Pacifique (équipe rouge) affrontaient les
             Canarikiski (équipe jaune)
           </span>
         </div>
         <div className="edition_photos">
-          <img src={pic} className="pic_edition" alt="" />
-          <img src={pic} className="pic_edition" alt="" />
-          <img src={pic} className="pic_edition" alt="" />
-          <img src={pic} className="pic_edition" alt="" />
-          <img src={pic} className="pic_edition" alt="" />
-          <img src={pic} className="pic_edition" alt="" />
-          <img src={pic} className="pic_edition" alt="" />
-          <img src={pic} className="pic_edition" alt="" />
+          <div className="carousel">
+            <Carousel>
+              <div>
+                <img src={pic1} className="pic_edition" alt="Pic1" />
+              </div>
+              <div>
+                <img src={pic2} className="pic_edition" alt="Pic2" />
+              </div>
+              <div>
+                <img src={pic3} className="pic_edition" alt="Pic3" />
+              </div>
+              <div>
+                <img src={pic4} className="pic_edition" alt="Pic4" />
+              </div>
+              <div>
+                <img src={pic5} className="pic_edition" alt="Pic5" />
+              </div>
+              <div>
+                <img src={pic6} className="pic_edition" alt="Pic6" />
+              </div>
+              <div>
+                <img src={pic7} className="pic_edition" alt="Pic7" />
+              </div>
+              <div>
+                <img src={pic8} className="pic_edition" alt="Pic8" />
+              </div>
+            </Carousel>
+          </div>
         </div>
       </div>
     </div>

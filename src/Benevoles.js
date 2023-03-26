@@ -1,4 +1,9 @@
-import pic from "./images/festival_pic_1.jpg";
+import pic1 from "./images/lesbénévoles1.jpg";
+import pic2 from "./images/lesbénévoles2.jpg";
+import pic3 from "./images/lesbénévoles3.jpg";
+import pic4 from "./images/lesbénévoles4.jpg";
+import pic5 from "./images/lesbénévoles5.jpg";
+import pic6 from "./images/lesbénévoles6.jpg";
 
 const Benevoles = () => {
   return (
@@ -34,12 +39,12 @@ const Benevoles = () => {
         </div>
       </div>
       <div className="benevoles_column2">
-        <img src={pic} className="pic_bene" alt="" />
-        <img src={pic} className="pic_bene" alt="" />
-        <img src={pic} className="pic_bene" alt="" />
-        <img src={pic} className="pic_bene" alt="" />
-        <img src={pic} className="pic_bene" alt="" />
-        <img src={pic} className="pic_bene" alt="" />
+        <img src={pic1} className="pic_bene" alt="" />
+        <img src={pic2} className="pic_bene" alt="" />
+        <img src={pic3} className="pic_bene" alt="" />
+        <img src={pic4} className="pic_bene" alt="" />
+        <img src={pic5} className="pic_bene" alt="" />
+        <img src={pic6} className="pic_bene" alt="" />
       </div>
     </div>
   );

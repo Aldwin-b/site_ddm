@@ -1,12 +1,11 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter, BrowserRouter } from "react-router-dom";
 import Header from "./Header.js";
 import Main from "./Main.js";
 import Festival from "./Festival";
 import Benevoles from "./Benevoles";
 import MatchsImpro from "./MatchsImpro";
 import Cours from "./Cours";
-
 import Tarifs from "./Tarifs";
 
 function App() {
@@ -18,11 +17,11 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="festival" element={<Festival />} />
-          <Route path="benevoles" element={<Benevoles />} />
-          <Route path="matchsimpro" element={<MatchsImpro />} />
-          <Route path="cours" element={<Cours />} />
-          <Route path="WIP" element={Tarifs} />
+          <Route path="/festival" element={<Festival />} />
+          <Route path="/benevoles" element={<Benevoles />} />
+          <Route path="/matchsimpro" element={<MatchsImpro />} />
+          <Route path="/cours" element={<Cours />} />
+          <Route path="/WIP" element={Tarifs} />
         </Routes>
       </div>
     </div>

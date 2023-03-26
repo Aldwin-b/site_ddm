@@ -1,7 +1,11 @@
-import festival_pic from "./images/festival_pic.png";
-import festival_pic_1 from "./images/festival_pic_1.jpg";
-import festival_pic_2 from "./images/festival_pic_2.jpg";
-import festival_pic_3 from "./images/festival_pic_3.jpg";
+import festival_pic_1 from "./images/lefestival1.jpg";
+import festival_pic_2 from "./images/lefestival2.jpg";
+import festival_pic_3 from "./images/lefestival3.jpg";
+import festival_pic_4 from "./images/lefestival4.jpg";
+import festival_pic_5 from "./images/lefestival5.jpg";
+import festival_pic_6 from "./images/lefestival6.jpg";
+import festival_pic_7 from "./images/lefestival7.jpg";
+
 import logoW from "./images/logo_W.png";
 
 const Festival = () => {
@@ -32,12 +36,12 @@ const Festival = () => {
         </div>
 
         <div id="festival_pic" className="festival_container_picture">
-          <img src={festival_pic} className="festival_picture" alt="" />
+          <img src={festival_pic_1} className="festival_picture" alt="" />
         </div>
       </div>
       <div className="festival_container_2">
         <div className="festival_column">
-          <img src={festival_pic_1} className="temp_pic" alt="" />
+          <img src={festival_pic_2} className="temp_pic" alt="" />
           <div className="festival_title2_container">
             <div className="title2">Parler de théâtre dans un milieu rural</div>
           </div>
@@ -52,7 +56,7 @@ const Festival = () => {
           </div>
         </div>
         <div className="festival_column">
-          <img src={festival_pic_2} className="temp_pic" alt="" />
+          <img src={festival_pic_3} className="temp_pic" alt="" />
           <div className="festival_title2_container">
             <div className="title2">
               Présenter des spectacles de grande qualité à un large public
@@ -69,7 +73,7 @@ const Festival = () => {
           </div>
         </div>
         <div className="festival_column">
-          <img src={festival_pic_3} className="temp_pic" alt="" />
+          <img src={festival_pic_4} className="temp_pic" alt="" />
           <div className="festival_title2_container">
             <span className="title2">Créer un lieu d’échange</span>
           </div>
@@ -110,20 +114,6 @@ const Festival = () => {
               </div>
             </div>
             <div className="textbox">
-              <div className="title3">Décors</div>
-              <div className="text_small_W">
-                Enfin, la décoration du festival est réalisée à partir de
-                matériaux de récupération. Une grande partie du matériel
-                technique est mis à disposition par les collectivités et les
-                partenaires afin de privilégier la mise en commun.
-              </div>
-            </div>
-          </div>
-          <div className="festival_sub_column">
-            <img src={logoW} className="logoW" alt="" />
-          </div>
-          <div className="festival_sub_column">
-            <div className="textbox">
               <div className="title3">Tri des déchets</div>
               <div className="text_small_W">
                 Pour cette quinzième édition, nous voulons mettre l’accent sur
@@ -132,6 +122,20 @@ const Festival = () => {
                 voulons limiter au maximum le gaspillage, ainsi toute la
                 vaisselle de notre espace bénévole est réutilisable et nos
                 déchets alimentaires sont compostés !
+              </div>
+            </div>
+          </div>
+          <div className="festival_sub_column">
+            <img src={logoW} className="logoW" alt="" />
+          </div>
+          <div className="festival_sub_column">
+            <div className="textbox">
+              <div className="title3">Décors</div>
+              <div className="text_small_W">
+                Enfin, la décoration du festival est réalisée à partir de
+                matériaux de récupération. Une grande partie du matériel
+                technique est mis à disposition par les collectivités et les
+                partenaires afin de privilégier la mise en commun.
               </div>
             </div>
             <div className="textbox">
@@ -160,9 +164,9 @@ const Festival = () => {
       </div>
       <div className="festival_container_4">
         <div className="festival_column_pictures">
-          <img src={festival_pic_1} className="temp_pic_wrapped" alt="" />
-          <img src={festival_pic_1} className="temp_pic_wrapped" alt="" />
-          <img src={festival_pic_1} className="temp_pic_wrapped" alt="" />
+          <img src={festival_pic_5} className="festival_pic_wrapped" alt="" />
+          <img src={festival_pic_6} className="festival_pic_wrapped" alt="" />
+          <img src={festival_pic_7} className="festival_pic_wrapped" alt="" />
         </div>
         <div className="festival_column_text">
           <div className="festival_row_text">
