@@ -1,4 +1,5 @@
-import main_picture from "./images/main.jpg";
+import main_picture from "./images/main_picture.png";
+import { Link } from "react-router-dom";
 
 const Main = () => {
   return (
@@ -27,7 +28,11 @@ const Main = () => {
           </span>
         </div>
         <div id="prog" className="button_container">
-          <button className="button">PROGRAMMATION 2023</button>
+          <button className="button">
+            <Link className="link" to="/programmation">
+              PROGRAMMATION 2023
+            </Link>
+          </button>
         </div>
       </div>
     </div>

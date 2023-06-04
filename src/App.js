@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route, HashRouter, BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Header from "./Header.js";
 import Main from "./Main.js";
 import Festival from "./Festival";
@@ -7,7 +7,8 @@ import Benevoles from "./Benevoles";
 import MatchsImpro from "./MatchsImpro";
 import Cours from "./Cours";
 import Tarifs from "./Tarifs";
-
+import Progra from "./Progra";
+import Spectacle from "./Spectacle";
 function App() {
   return (
     <div className="global_container">
@@ -22,6 +23,8 @@ function App() {
           <Route path="/matchsimpro" element={<MatchsImpro />} />
           <Route path="/cours" element={<Cours />} />
           <Route path="/WIP" element={Tarifs} />
+          <Route path="/programmation" element={<Progra />} />
+          <Route path="/spectacle/:type/:id" element={<Spectacle />} />
         </Routes>
       </div>
     </div>
