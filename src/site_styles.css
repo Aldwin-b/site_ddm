@@ -562,6 +562,72 @@ PROGRAMMATION
   color: gainsboro;
 }
 
+/*
+Spectacle
+*/
+
+.spec_container {
+  display: flex;
+  margin: 5%;
+  margin-top: 2.5%;
+  margin-bottom: 0%;
+}
+.spec_pic_container {
+  flex: 1;
+  display: flex;
+}
+.spec_pic {
+  flex: 1;
+  width: 80%;
+  border-radius: 100%;
+}
+.spec_infos {
+  margin-left: 5%;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+.spec_datas {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+.spec_titre {
+  flex: 2;
+  font-family: "R_VariableFont";
+  font-size: 3vw;
+  display: flex;
+  align-items: center;
+}
+
+.medium_scene {
+  margin-left: 10px;
+  width: 50px;
+}
+.spec_cie {
+  flex: 1;
+  font-size: 1.3vw;
+  font-style: italic;
+  font-family: "P_BoldItalic";
+}
+.spec_det {
+  flex: 1;
+  font-size: 1.3vw;
+  font-family: "P_Regular";
+}
+.spec_resume {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  font-family: "P_Regular";
+  font-size: 1.3vw;
+  line-height: 5vh;
+  font-weight: normal;
+}
+
 /*Autre*/
 .header {
   display: flex;
