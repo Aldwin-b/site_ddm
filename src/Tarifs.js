@@ -1,5 +1,5 @@
 import "./site_styles.css";
-import pic from "./images/festival_pic_1.jpg";
+import concert from "./images/concert.png";
 
 const Tarifs = () => {
   return (
@@ -87,9 +87,9 @@ const Tarifs = () => {
         </div>
       </div>
       <div className="tarifs_band">
-        <img className="tarif_pic" src={pic} alt="dazu"></img>
+        <img className="tarif_pic" src={concert} alt="concert logo"></img>
         <div className="banderole_text">CONCERTS DU SOIR GATUITS !</div>
-        <img className="tarif_pic" src={pic} alt="dazu"></img>
+        <img className="tarif_pic" src={concert} alt="concert logo"></img>
       </div>
     </div>
   );

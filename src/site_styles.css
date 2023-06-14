@@ -663,14 +663,11 @@ TARIFS
 }
 .tarifs_l {
   border-right: solid;
-  border-width: 1.75px;
+  border-width: 4px;
   border-color: white;
   padding-right: 5%;
 }
 .tarifs_r {
-  border-left: solid;
-  border-width: 1.75px;
-  border-color: white;
   padding-left: 5%;
   display: flex;
   flex-direction: row;
