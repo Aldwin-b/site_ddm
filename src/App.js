@@ -7,6 +7,7 @@ import Benevoles from "./Benevoles";
 import MatchsImpro from "./MatchsImpro";
 import Cours from "./Cours";
 import Tarifs from "./Tarifs";
+import Venir from "./Venir";
 import Progra from "./Progra";
 import Spectacle from "./Spectacle";
 function App() {
@@ -22,7 +23,8 @@ function App() {
           <Route path="/benevoles" element={<Benevoles />} />
           <Route path="/matchsimpro" element={<MatchsImpro />} />
           <Route path="/cours" element={<Cours />} />
-          <Route path="/WIP" element={Tarifs} />
+          <Route path="/tarifs" element={<Tarifs />} />
+          <Route path="/venir" element={<Venir />} />
           <Route path="/programmation" element={<Progra />} />
           <Route path="/spectacle/:type/:id" element={<Spectacle />} />
         </Routes>

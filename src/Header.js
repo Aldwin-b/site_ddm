@@ -44,8 +44,8 @@ const Header = () => {
         <div className="navBar">
           <div className="navBar_text">
             <NavDropdown title="INFORMATIONS PRATIQUES" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/WIP">Tarifs</NavDropdown.Item>
-              <NavDropdown.Item href="/WIP">Comment venir ?</NavDropdown.Item>
+              <NavDropdown.Item href="/tarifs">Tarifs</NavDropdown.Item>
+              <NavDropdown.Item href="/venir">Comment venir ?</NavDropdown.Item>
             </NavDropdown>
           </div>
         </div>

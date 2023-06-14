@@ -386,7 +386,7 @@ MATCHS D'IMPROS
   display: flex;
   justify-content: center;
 
-  max-width: 57.7vw;
+  max-width: 50vw;
 }
 .pic_edition {
   max-height: 75vh;
@@ -627,7 +627,177 @@ Spectacle
   line-height: 5vh;
   font-weight: normal;
 }
+/*
+TARIFS
+*/
+.tarifs_container {
+  display: flex;
+  flex-direction: column;
+  min-height: 75vh;
+  flex: 1;
+}
 
+.tarifs_infos {
+  flex: 15;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.tarifs_title {
+  display: flex;
+  flex: 1;
+  margin-bottom: 1%;
+}
+.tarifs_details {
+  display: flex;
+  flex: 8;
+  margin-bottom: 2%;
+}
+
+.tarifs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.tarifs_l {
+  border-right: solid;
+  border-width: 1.75px;
+  border-color: white;
+  padding-right: 5%;
+}
+.tarifs_r {
+  border-left: solid;
+  border-width: 1.75px;
+  border-color: white;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: row;
+}
+.tarif_normaux {
+  flex: 5;
+  padding-right: 0;
+}
+.tarifs_infos_bonus {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.tarifs_bonus {
+  display: flex;
+  align-items: end;
+}
+
+.tarifs_bonus_text {
+  border-radius: 20;
+  color: white;
+  font-size: 1.1vw;
+  padding: 10%;
+  border-radius: 10px;
+  background-color: #005a5b;
+}
+
+.tarifs_subtitle {
+  display: flex;
+  justify-content: space-between;
+  font-family: "R_VariableFont";
+  font-weight: bold;
+  margin-bottom: 2%;
+  font-size: 1.6vw;
+  margin-right: 15%;
+  color: #005a5b;
+}
+.tarifs_head {
+  flex: 2;
+  display: flex;
+  font-family: "R_VariableFont";
+  font-weight: bold;
+  color: #005a5b;
+  justify-content: start;
+  font-size: 1.2vw;
+  margin-top: 5%;
+}
+.tarifs_j {
+  flex: 1;
+}
+
+.tarifs_element {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 15%;
+  margin-left: 20px;
+  color: white;
+  font-family: "P_Regular";
+  font-size: 0.8vw;
+}
+
+.tarifs_band {
+  display: flex;
+  background-color: #c9b43e;
+  flex: 1;
+  margin-bottom: 2%;
+  justify-content: center;
+  align-items: center;
+}
+.tarif_pic {
+  width: 100px;
+}
+
+.banderole_text {
+  color: white;
+  font-size: 1.5vw;
+  font-family: "p_Bold";
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/*
+VENIR
+*/
+
+.venir_container {
+  display: flex;
+  min-height: 75vh;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+.venir_title {
+  flex: 1;
+  display: flex;
+}
+
+.venir_infos {
+  display: flex;
+  flex: 9;
+}
+.venir_carte {
+  flex: 13;
+  display: flex;
+}
+.venir_texts {
+  flex: 17;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+}
+.venir_subtitle {
+  color: #005a5b;
+  font-family: "P_Bold";
+  font-size: 1.5vw;
+}
+.venir_text {
+  color: white;
+  font-family: "P_Regular";
+}
+.map {
+  aspect-ratio: auto;
+  margin: 5%;
+}
 /*Autre*/
 .header {
   display: flex;
@@ -652,9 +822,7 @@ Spectacle
   display: flex;
   flex: 1;
   min-width: 10vw;
-  justify-content: space-around;
-
-  position: relative;
+  justify-content: space-evenly;
 }
 
 .navBar_text {
@@ -668,6 +836,7 @@ Spectacle
 }
 .navBar_text:hover {
   background-color: #9bbabb;
+  border-radius: 5px;
 }
 div.dropdown-menu.show {
   background-color: #9bbabb;

@@ -3,55 +3,93 @@ import pic from "./images/festival_pic_1.jpg";
 
 const Tarifs = () => {
   return (
-    <div className="container">
-      <div className="tarifs_title">
-        <span className="title">Tarifs</span>
-      </div>
-      <div className="tarifs_details">
-        <div className="tarifs1">
-          <div className="tarifs_2j"></div>
-          <div className="tarifs_v"></div>
+    <div className="tarifs_container">
+      <div className="tarifs_infos">
+        <div className="tarifs_title">
+          <div className="title">Tarifs</div>
         </div>
-        <div className="tarifs2">
-          <div className="tarifs_s">
-            <div className="tarifs_s_element">
-              <span>SAMEDI 15 JUILLET</span>
-              <span>PRIX</span>
+        <div className="tarifs_details">
+          <div className="tarifs tarifs_l">
+            <div className="tarifs_subtitle">
+              <div>PASS 2 JOURS</div>
+              <div>PRIX</div>
             </div>
-            <div className="tarifs_s_element">
-              <span>Spectacle jeune public</span>
-              <span>5.00€</span>
+            <div className="tarifs_j">
+              <div className="tarifs_element">
+                <div> Plein tarif</div>
+                <div>25.00€</div>
+              </div>
+              <div className="tarifs_element">
+                <div>Moins de 12 ans</div>
+                <div>12.50€</div>
+              </div>
             </div>
-            <div className="tarifs_s_head">
-              <span>JOURNEE COMPLETE</span>
+            <div className="tarifs_subtitle">
+              <div>VENDREDI 14 JUILLET</div>
+              <div>PRIX</div>
             </div>
-            <div className="tarifs_s_element">
-              <span>Plein tarif</span>
-              <span>16.00€</span>
-            </div>
-            <div className="tarifs_s_element">
-              <span>Moins de 12 ans</span>
-              <span>8.00€</span>
-            </div>
-            <div className="tarifs_s_head">
-              <span>A PARTIR DE 14H</span>
-            </div>
-            <div className="tarifs_s_element">
-              <span>Plein Tarif</span>
-              <span>20.00€</span>
-            </div>
-            <div className="tarifs_s_element">
-              <span>Moins de 12 ans</span>
-              <span>10.00€</span>
+            <div className="tarifs_j">
+              <div className="tarifs_element">
+                <div>Plein tarif</div>
+                <div>16.00€</div>
+              </div>
+              <div className="tarifs_element">
+                <div>Moins de 12 ans</div>
+                <div>8.00€</div>
+              </div>
             </div>
           </div>
-          <div className="tarifs_bonus"></div>
+          <div className="tarifs tarifs_r">
+            <div className="tarif_normaux">
+              <div className="tarifs_subtitle">
+                <div>SAMEDI 15 JUILLET</div>
+                <div>PRIX</div>
+              </div>
+              <div className="tarifs_element">
+                <div>Spectacle jeune public</div>
+                <div>5.00€</div>
+              </div>
+              <div>
+                <div className="tarifs_head">
+                  <div>JOURNEE COMPLETE</div>
+                </div>
+                <div className="tarifs_element">
+                  <div>Plein tarif</div>
+                  <div>16.00€</div>
+                </div>
+                <div className="tarifs_element">
+                  <div>Moins de 12 ans</div>
+                  <div>8.00€</div>
+                </div>
+              </div>
+              <div>
+                <div className="tarifs_head">
+                  <div>A PARTIR DE 14H</div>
+                </div>
+                <div className="tarifs_element">
+                  <div>Plein Tarif</div>
+                  <div>20.00€</div>
+                </div>
+                <div className="tarifs_element">
+                  <div>Moins de 12 ans</div>
+                  <div>10.00€</div>
+                </div>
+              </div>
+            </div>
+            <div className="tarifs_infos_bonus">
+              <div className="tarifs_bonus">
+                <div className="tarifs_bonus_text">
+                  Boisson offerte si vous arrivez dès 14h
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="tarifs_band">
-        <img src={pic} alt=""></img>
-        <span></span>
-        <img alt=""></img>
+        <img className="tarif_pic" src={pic} alt="dazu"></img>
+        <div className="banderole_text">CONCERTS DU SOIR GATUITS !</div>
+        <img className="tarif_pic" src={pic} alt="dazu"></img>
       </div>
     </div>
   );
