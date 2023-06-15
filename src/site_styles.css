@@ -864,3 +864,215 @@ a.dropdown-item {
   text-decoration: none;
   color: inherit;
 }
+
+/*##########################*/
+/*##### VERSION MOBILE #####*/
+/*##########################*/
+
+@media screen and (max-width: 800px) {
+  .global_container {
+    background-color: red;
+  }
+  /* autres */
+  .header_mobile {
+    background-color: #9bbabb;
+    height: 10vh;
+    display: flex;
+  }
+  /* site_styles.css */
+
+  .overlay {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #005a5b;
+    z-index: 999;
+    padding-left: 20%;
+  }
+  .overlay_main {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+  }
+  .close_container {
+    margin-right: 10%;
+    margin-top: 10%;
+    font-size: 30px;
+  }
+
+  .overlay_header {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+  }
+
+  .text_overlay {
+    display: flex;
+    justify-content: center;
+    font-family: "P_Regular";
+    font-size: 11px;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding-bottom: 10%;
+  }
+  .nav_mobile {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .nav_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "R_VariableFont";
+    font-size: 25px;
+    background-color: #005a5b;
+  }
+  .nav_title {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .nav_sub {
+    font-family: "R_VariableFont";
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: 5px;
+  }
+
+  .overlay_footer {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10%;
+    border-style: solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+  .rs_w {
+    width: 30%;
+  }
+
+  .dropdown_content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .dropdown_content a {
+    display: block;
+    padding: 5px 0;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .dropdown_content a:hover {
+    background-color: #f5f5f5;
+  }
+
+  .navBar_text.active {
+    color: #fff;
+    background-color: #000;
+  }
+
+  /* Ajoutez d'autres styles selon vos besoins */
+
+  .logo {
+    background-color: #005a5b;
+  }
+  .logoW {
+    width: 80%;
+  }
+  .navBar {
+    display: flex;
+    flex: 1;
+    background-color: darkgoldenrod;
+  }
+
+  .navBar_text {
+    display: flex;
+    justify-content: center;
+    font-family: "R_VariableFont";
+    font-size: 1.5vw;
+    padding: 1%;
+    font-weight: bold;
+    color: white;
+    background-color: darkgray;
+  }
+  .navBar_text:hover {
+    background-color: #9bbabb;
+    border-radius: 5px;
+  }
+  /*Main*/
+  .main_container {
+    background-color: #005a5b;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .main_picture_container {
+    display: flex;
+    flex: 1;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    justify-content: center;
+  }
+  .main_picture {
+    max-height: 10vh;
+    object-fit: cover;
+  }
+
+  .main_text_prog_container {
+    display: flex;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    flex: 2;
+    flex-direction: column;
+    text-align: start;
+    justify-content: space-between;
+  }
+  .main_text_container {
+    display: flex;
+    flex: 1;
+    text-align: start;
+  }
+
+  .button_container {
+    margin-top: 10%;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .button {
+    display: flex;
+    border-style: none;
+    background-color: white;
+    text-decoration: none;
+    color: rgb(107, 155, 155);
+    font-size: 2vw;
+    font-weight: bolder;
+    border-radius: 10px;
+  }
+}

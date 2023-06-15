@@ -1,57 +1,143 @@
-import "./site_styles.css";
-import ddm_pic from "./images/ddm_pic.png";
-
+import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
+import ddm_white from "./images/logo_W.png";
+import ddm_pic from "./images/ddm_pic.png";
+import fb_w from "./images/fb_w.png";
+import insta_w from "./images/insta_w.png";
+import yt_w from "./images/yt_w.png";
+import "./site_styles.css";
+
 const Header = () => {
-  return (
-    <nav>
-      <div className="header">
-        <div className="navBar">
-          <div className="navBar_text">
-            <NavDropdown title="LE FESTIVAL" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/festival">Le festival</NavDropdown.Item>
-              <NavDropdown.Item href="/benevoles">
-                Les bénévoles
-              </NavDropdown.Item>
-            </NavDropdown>
+  const screenWidth = window.innerWidth;
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+
+  const handleDropdownToggle = () => {
+    setIsDropdownVisible(!isDropdownVisible);
+  };
+  const handleOverlayClose = () => {
+    setIsDropdownVisible(false);
+  };
+
+  const handleOverlayClick = (event) => {
+    // Empêcher la propagation du clic à l'élément parent
+    event.stopPropagation();
+  };
+
+  if (screenWidth >= 800) {
+    return (
+      <nav>
+        <div className="header">
+          <div className="navBar">
+            <div className="navBar_text">
+              <NavDropdown title="LE FESTIVAL" id="basic-nav-dropdown">
+                <NavDropdown.Item href="/festival">
+                  Le festival
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/benevoles">
+                  Les bénévoles
+                </NavDropdown.Item>
+              </NavDropdown>
+            </div>
+          </div>
+          <div className="navBar">
+            <div className="navBar_text">
+              <NavDropdown title="LES MATCHS D'IMPROS" id="basic-nav-dropdown">
+                <NavDropdown.Item href="/matchsimpro">
+                  Les matchs
+                </NavDropdown.Item>
+              </NavDropdown>
+            </div>
+          </div>
+          <div className="navBar">
+            <Navbar.Brand href="/">
+              <img className="logo" src={ddm_pic} alt="" />
+            </Navbar.Brand>
+          </div>
+          <div className="navBar">
+            <div className="navBar_text">
+              <NavDropdown title="LES COURS" id="basic-nav-dropdown">
+                <NavDropdown.Item href="/cours">
+                  Présentation des cours
+                </NavDropdown.Item>
+              </NavDropdown>
+            </div>
+          </div>
+          <div className="navBar">
+            <div className="navBar_text">
+              <NavDropdown
+                title="INFORMATIONS PRATIQUES"
+                id="basic-nav-dropdown"
+              >
+                <NavDropdown.Item href="/tarifs">Tarifs</NavDropdown.Item>
+                <NavDropdown.Item href="/venir">
+                  Comment venir ?
+                </NavDropdown.Item>
+              </NavDropdown>
+            </div>
           </div>
         </div>
-        <div className="navBar">
-          <div className="navBar_text">
-            <NavDropdown title="LES MATCHS D'IMPROS" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/matchsimpro">
-                Les matchs
-              </NavDropdown.Item>
-            </NavDropdown>
+      </nav>
+    );
+  } else {
+    return (
+      <nav>
+        <div className="header">
+          <div className="navBar">
+            <div
+              className={`navBar_text ${isDropdownVisible ? "active" : ""}`}
+              onClick={handleDropdownToggle}
+            >
+              MENU
+              {isDropdownVisible && (
+                <div className="overlay" onClick={handleOverlayClick}>
+                  <div className="overlay_main">
+                    <div className="overlay_header">
+                      <img className="logoW" src={ddm_white} alt="" />
+                      <div className="text_overlay">
+                        Du 14 au 15 juillet 2023 au lac de Montendre
+                      </div>
+                    </div>
+                    <div className="nav_mobile">
+                      <div className="nav_menu">
+                        <div className="nav_title">LE FESTIVAL</div>
+                        <div className="nav_sub"> PRÉSENTATION</div>
+                        <div className="nav_sub">NOS ENGAGEMENTS</div>
+                        <div className="nav_sub">LES BÉNÉVOLES</div>
+                      </div>
+                      <div className="nav_menu">
+                        <div className="nav_title">LES MATCHS D'IMPRO</div>
+                      </div>
+                      <div className="nav_menu">
+                        <div className="nav_title">LES COURS</div>
+                      </div>
+                      <div className="nav_menu">
+                        <div className="nav_title">COMMENT VENIR</div>{" "}
+                        <div className="nav_sub">TARIFS</div>
+                        <div className="nav_sub">COMMENT VENIR</div>
+                      </div>
+                    </div>
+                    <div className="overlay_footer">
+                      <img className="rs_w" src={fb_w} alt="" />
+                      <img className="rs_w" src={insta_w} alt="" />
+                      <img className="rs_w" src={yt_w} alt="" />
+                    </div>
+                  </div>
+                  <div className="close_container">
+                    <div className="close_button" onClick={handleOverlayClose}>
+                      {" "}
+                      X{" "}
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
-        <div className="navBar">
-          <Navbar.Brand href="/">
-            <img className="logo" src={ddm_pic} alt="" />
-          </Navbar.Brand>
-        </div>
-        <div className="navBar">
-          <div className="navBar_text">
-            <NavDropdown title="LES COURS" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/cours">
-                Présentation des cours
-              </NavDropdown.Item>
-            </NavDropdown>
-          </div>
-        </div>
-        <div className="navBar">
-          <div className="navBar_text">
-            <NavDropdown title="INFORMATIONS PRATIQUES" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/tarifs">Tarifs</NavDropdown.Item>
-              <NavDropdown.Item href="/venir">Comment venir ?</NavDropdown.Item>
-            </NavDropdown>
-          </div>
-        </div>
-      </div>
-    </nav>
-  );
+      </nav>
+    );
+  }
 };
 
 export default Header;
