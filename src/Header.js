@@ -4,6 +4,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 import ddm_white from "./images/logo_W.png";
 import ddm_pic from "./images/ddm_pic.png";
+import menu from "./images/menu.jpg";
 import fb_w from "./images/fb_w.png";
 import insta_w from "./images/insta_w.png";
 import yt_w from "./images/yt_w.png";
@@ -83,56 +84,59 @@ const Header = () => {
   } else {
     return (
       <nav>
-        <div className="header">
-          <div className="navBar">
-            <div
-              className={`navBar_text ${isDropdownVisible ? "active" : ""}`}
-              onClick={handleDropdownToggle}
-            >
-              MENU
-              {isDropdownVisible && (
-                <div className="overlay" onClick={handleOverlayClick}>
-                  <div className="overlay_main">
-                    <div className="overlay_header">
-                      <img className="logoW" src={ddm_white} alt="" />
-                      <div className="text_overlay">
-                        Du 14 au 15 juillet 2023 au lac de Montendre
-                      </div>
-                    </div>
-                    <div className="nav_mobile">
-                      <div className="nav_menu">
-                        <div className="nav_title">LE FESTIVAL</div>
-                        <div className="nav_sub"> PRÉSENTATION</div>
-                        <div className="nav_sub">NOS ENGAGEMENTS</div>
-                        <div className="nav_sub">LES BÉNÉVOLES</div>
-                      </div>
-                      <div className="nav_menu">
-                        <div className="nav_title">LES MATCHS D'IMPRO</div>
-                      </div>
-                      <div className="nav_menu">
-                        <div className="nav_title">LES COURS</div>
-                      </div>
-                      <div className="nav_menu">
-                        <div className="nav_title">COMMENT VENIR</div>{" "}
-                        <div className="nav_sub">TARIFS</div>
-                        <div className="nav_sub">COMMENT VENIR</div>
-                      </div>
-                    </div>
-                    <div className="overlay_footer">
-                      <img className="rs_w" src={fb_w} alt="" />
-                      <img className="rs_w" src={insta_w} alt="" />
-                      <img className="rs_w" src={yt_w} alt="" />
+        <div className="header_mobile">
+          <div
+            className={`menu navBar_text ${isDropdownVisible ? "active" : ""}`}
+            onClick={handleDropdownToggle}
+          >
+            <img className="menu_logo" src={menu} alt="" />
+
+            {isDropdownVisible && (
+              <div className="overlay" onClick={handleOverlayClick}>
+                <div className="overlay_main">
+                  <div className="overlay_header">
+                    <img className="logoW" src={ddm_white} alt="" />
+                    <div className="text_overlay">
+                      Du 14 au 15 juillet 2023 au lac de Montendre
                     </div>
                   </div>
-                  <div className="close_container">
-                    <div className="close_button" onClick={handleOverlayClose}>
-                      {" "}
-                      X{" "}
+                  <div className="nav_mobile">
+                    <div className="nav_menu">
+                      <div className="nav_title">LE FESTIVAL</div>
+                      <div className="nav_sub"> PRÉSENTATION</div>
+                      <div className="nav_sub">NOS ENGAGEMENTS</div>
+                      <div className="nav_sub">LES BÉNÉVOLES</div>
                     </div>
+                    <div className="nav_menu">
+                      <div className="nav_title">LES MATCHS D'IMPRO</div>
+                    </div>
+                    <div className="nav_menu">
+                      <div className="nav_title">LES COURS</div>
+                    </div>
+                    <div className="nav_menu">
+                      <div className="nav_title">COMMENT VENIR</div>
+                      <div className="nav_sub">TARIFS</div>
+                      <div className="nav_sub">COMMENT VENIR</div>
+                    </div>
+                  </div>
+                  <div className="overlay_footer">
+                    <img className="rs_w" src={fb_w} alt="" />
+                    <img className="rs_w" src={insta_w} alt="" />
+                    <img className="rs_w" src={yt_w} alt="" />
                   </div>
                 </div>
-              )}
-            </div>
+                <div className="close_container">
+                  <div className="close_button" onClick={handleOverlayClose}>
+                    X
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+          <div className="central_logo">
+            <a className="link_main" href="/">
+              <img className="logo" src={ddm_pic} alt="" />
+            </a>
           </div>
         </div>
       </nav>
