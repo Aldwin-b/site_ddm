@@ -102,13 +102,27 @@ const Header = () => {
                   </div>
                   <div className="nav_mobile">
                     <div className="nav_menu">
-                      <div className="nav_title">LE FESTIVAL</div>
-                      <div className="nav_sub"> PRÉSENTATION</div>
-                      <div className="nav_sub">NOS ENGAGEMENTS</div>
-                      <div className="nav_sub">LES BÉNÉVOLES</div>
+                      <div className="nav_title">
+                        <a className="link" href="/festival">
+                          LE FESTIVAL
+                        </a>
+                      </div>
+                      <div className="nav_sub">
+                        <a className="link" href="/festival">
+                          PRÉSENTATION
+                        </a>
+                      </div>
+                      <a className="link" href="/engagement">
+                        <div className="nav_sub">NOS ENGAGEMENTS</div>
+                      </a>
+                      <a className="link" href="/benevoles">
+                        <div className="nav_sub">LES BÉNÉVOLES</div>
+                      </a>
                     </div>
                     <div className="nav_menu">
-                      <div className="nav_title">LES MATCHS D'IMPRO</div>
+                      <a className="link" href="/matchsimpro">
+                        <div className="nav_title">LES MATCHS D'IMPRO</div>{" "}
+                      </a>
                     </div>
                     <div className="nav_menu">
                       <div className="nav_title">LES COURS</div>

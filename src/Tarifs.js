@@ -16,12 +16,12 @@ const Tarifs = () => {
             </div>
             <div className="tarifs_j">
               <div className="tarifs_element">
-                <div> Plein tarif</div>
-                <div>25.00€</div>
+                <div className="tarifs_text"> Plein tarif</div>
+                <div className="tarifs_text">25.00€</div>
               </div>
               <div className="tarifs_element">
-                <div>Moins de 12 ans</div>
-                <div>12.50€</div>
+                <div className="tarifs_text">Moins de 12 ans</div>
+                <div className="tarifs_text">12.50€</div>
               </div>
             </div>
             <div className="tarifs_subtitle">
@@ -30,12 +30,12 @@ const Tarifs = () => {
             </div>
             <div className="tarifs_j">
               <div className="tarifs_element">
-                <div>Plein tarif</div>
-                <div>16.00€</div>
+                <div className="tarifs_text">Plein tarif</div>
+                <div className="tarifs_text">16.00€</div>
               </div>
               <div className="tarifs_element">
-                <div>Moins de 12 ans</div>
-                <div>8.00€</div>
+                <div className="tarifs_text">Moins de 12 ans</div>
+                <div className="tarifs_text">8.00€</div>
               </div>
             </div>
           </div>
@@ -46,20 +46,20 @@ const Tarifs = () => {
                 <div>PRIX</div>
               </div>
               <div className="tarifs_element">
-                <div>Spectacle jeune public</div>
-                <div>5.00€</div>
+                <div className="tarifs_text">Spectacle jeune public</div>
+                <div className="tarifs_text">5.00€</div>
               </div>
               <div>
                 <div className="tarifs_head">
                   <div>JOURNEE COMPLETE</div>
                 </div>
                 <div className="tarifs_element">
-                  <div>Plein tarif</div>
-                  <div>16.00€</div>
+                  <div className="tarifs_text">Plein tarif</div>
+                  <div className="tarifs_text">16.00€</div>
                 </div>
                 <div className="tarifs_element">
-                  <div>Moins de 12 ans</div>
-                  <div>8.00€</div>
+                  <div className="tarifs_text">Moins de 12 ans</div>
+                  <div className="tarifs_text">8.00€</div>
                 </div>
               </div>
               <div>
@@ -67,12 +67,12 @@ const Tarifs = () => {
                   <div>A PARTIR DE 14H</div>
                 </div>
                 <div className="tarifs_element">
-                  <div>Plein Tarif</div>
-                  <div>20.00€</div>
+                  <div className="tarifs_text">Plein Tarif</div>
+                  <div className="tarifs_text">20.00€</div>
                 </div>
                 <div className="tarifs_element">
-                  <div>Moins de 12 ans</div>
-                  <div>10.00€</div>
+                  <div className="tarifs_text">Moins de 12 ans</div>
+                  <div className="tarifs_text">10.00€</div>
                 </div>
               </div>
             </div>

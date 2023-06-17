@@ -10,6 +10,7 @@ import Tarifs from "./Tarifs";
 import Venir from "./Venir";
 import Progra from "./Progra";
 import Spectacle from "./Spectacle";
+import Engagement from "./Engagement";
 function App() {
   return (
     <div className="global_container">
@@ -27,6 +28,7 @@ function App() {
           <Route path="/venir" element={<Venir />} />
           <Route path="/programmation" element={<Progra />} />
           <Route path="/spectacle/:type/:id" element={<Spectacle />} />
+          <Route path="/engagement" element={<Engagement />} />
         </Routes>
       </div>
     </div>
