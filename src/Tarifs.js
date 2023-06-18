@@ -1,12 +1,26 @@
 import "./site_styles.css";
 import concert from "./images/concert.png";
+import React, { useEffect, useState } from "react";
 
 const Tarifs = () => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 800);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className="tarifs_container">
       <div className="tarifs_infos">
         <div className="tarifs_title">
-          <div className="title">Tarifs</div>
+          <div className="title mobile_page_title">Tarifs</div>
         </div>
         <div className="tarifs_details">
           <div className="tarifs tarifs_l">
@@ -79,7 +93,9 @@ const Tarifs = () => {
             <div className="tarifs_infos_bonus">
               <div className="tarifs_bonus">
                 <div className="tarifs_bonus_text">
-                  Boisson offerte si vous arrivez dès 14h
+                  {isSmallScreen
+                    ? "( boisson offerte si vous arrivez dès 14h )"
+                    : " Boisson offerte si vous arrivez dès 14h"}
                 </div>
               </div>
             </div>

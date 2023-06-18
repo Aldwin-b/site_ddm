@@ -130,6 +130,7 @@
   margin-top: 10%;
   display: flex;
   align-items: flex-end;
+  margin-bottom: 10%;
 }
 
 .button {
@@ -876,8 +877,6 @@ a.dropdown-item {
 /*##########################*/
 
 @media screen and (max-width: 800px) {
-  .global_container {
-  }
   /* autres */
   .header_mobile {
     margin-top: 5%;
@@ -908,7 +907,14 @@ a.dropdown-item {
 
   .logo {
     flex: 1;
+    height: 100%;
     max-width: fit-content;
+  }
+
+  .menu_link {
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
 
   /* site_styles.css */
@@ -924,15 +930,15 @@ a.dropdown-item {
     height: 100%;
     background-color: #005a5b;
     z-index: 999;
-    padding-left: 20%;
+    padding-left: 15%;
   }
   .overlay_main {
     display: flex;
     flex-direction: column;
-    margin-right: 10%;
+    margin-right: 7.5%;
   }
   .close_container {
-    margin-right: 10%;
+    margin-right: 7.5%;
     margin-top: 10%;
     font-size: 30px;
   }
@@ -956,7 +962,7 @@ a.dropdown-item {
     font-size: 11px;
     margin-right: 25%;
     margin-left: 25%;
-    padding-bottom: 10%;
+    margin-bottom: 2.5%;
   }
   .nav_mobile {
     flex: 6;
@@ -965,8 +971,6 @@ a.dropdown-item {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
   }
   .nav_menu {
     display: flex;
@@ -978,7 +982,6 @@ a.dropdown-item {
   }
   .nav_title {
     text-align: center;
-    margin-bottom: 5px;
   }
   .nav_sub {
     border-style: solid;
@@ -988,7 +991,8 @@ a.dropdown-item {
     font-family: "R_VariableFont";
     font-size: 15px;
     font-weight: lighter;
-    margin-top: 5px;
+    margin-top: 2.5%;
+    margin-bottom: 5%;
   }
 
   .overlay_footer {
@@ -1002,8 +1006,14 @@ a.dropdown-item {
     border-left: none;
     border-right: none;
   }
+
+  .link_rs {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
   .rs_w {
-    width: 20%;
+    width: 40%;
   }
 
   /* Ajoutez d'autres styles selon vos besoins */
@@ -1012,7 +1022,7 @@ a.dropdown-item {
     width: 80%;
   }
   .text_W {
-    font-size: 13px;
+    font-size: 12px;
   }
   /*Main*/
   .main_container {
@@ -1053,7 +1063,7 @@ a.dropdown-item {
   }
 
   .button_container {
-    margin-top: 0%;
+    margin-top: 5%;
 
     display: flex;
     justify-content: flex-end;
@@ -1067,7 +1077,7 @@ a.dropdown-item {
     color: rgb(107, 155, 155);
     font-size: 20px;
     font-weight: bolder;
-    border-radius: 10px;
+    border-radius: 5px;
   }
 
   .mobile_page_title {
@@ -1143,6 +1153,7 @@ a.dropdown-item {
   }
   .text_W {
     font-weight: bold;
+    font-size: 12px;
   }
   .engagement_container {
     margin-left: 5%;
@@ -1265,5 +1276,406 @@ a.dropdown-item {
     color: white;
     font-size: 15px;
     margin-bottom: 10%;
+  }
+
+  /*
+COURS
+*/
+  .cours {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: unset;
+    padding-right: unset;
+  }
+  .cours_container1 {
+    flex: 1;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .cours_container2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-top: 2%;
+    min-height: unset;
+  }
+  .cours_text_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .cours_title {
+    text-align: start;
+    margin-bottom: 2%;
+  }
+
+  .cours_text1 {
+    flex: 1;
+    font-size: 12px;
+    text-align: start;
+    padding-right: unset;
+  }
+  .cours_text2 {
+    flex: 2;
+    text-align: start;
+    border-color: unset;
+    border-style: unset;
+    border-top: unset;
+    border-bottom: unset;
+    border-right: unset;
+    padding-left: unset;
+    margin-bottom: 5%;
+  }
+
+  .cours_text3 {
+    text-align: start;
+    margin-bottom: 5%;
+    flex: 1;
+  }
+
+  .cours_photos {
+    display: flex;
+    flex: 2;
+  }
+  .cours_main_photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cours_photo {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+  }
+  .cours_big {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 20px;
+  }
+  .cours_small_photo {
+    flex: 1;
+    display: flex;
+
+    flex-direction: column;
+  }
+  .cours_small_photo_row {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cours_small {
+    width: 42.5vw;
+    max-width: unset;
+    height: 42.5vw;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  .no_center_r {
+    object-position: -75px 0; /* Modifier les valeurs selon le décalage souhaité */
+  }
+  .no_center_l {
+    object-position: 0px 0; /* Modifier les valeurs selon le décalage souhaité */
+  }
+  /**********/
+  /* TARIFS */
+  /**********/
+
+  .tarifs_container {
+    display: flex;
+    flex-direction: column;
+    min-height: 75vh;
+    flex: 1;
+  }
+
+  .tarifs_infos {
+    flex: 15;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .tarifs_title {
+    display: unset;
+    flex: unset;
+    margin-bottom: unset;
+  }
+  .tarifs_details {
+    display: flex;
+    flex: 8;
+    flex-direction: column;
+    margin-bottom: unset;
+  }
+
+  .tarifs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .tarifs_l {
+    border-right: unset;
+    border-width: unset;
+    border-color: unset;
+    padding-right: unset;
+  }
+  .tarifs_r {
+    padding-left: unset;
+    display: flex;
+    flex-direction: column;
+  }
+  .tarifs_text {
+    font-size: 13px;
+  }
+  .tarif_normaux {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-right: unset;
+  }
+  .tarifs_infos_bonus {
+    flex: 10;
+    display: flex;
+
+    justify-content: unset;
+    align-items: center;
+  }
+
+  .tarifs_bonus {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .tarifs_bonus_text {
+    border-radius: unset;
+    font-family: "P_Italic";
+    color: white;
+    font-size: 15px;
+    padding: unset;
+    background-color: unset;
+  }
+
+  .tarifs_subtitle {
+    display: flex;
+    justify-content: space-between;
+    font-family: "R_VariableFont";
+    font-weight: bold;
+    margin-bottom: 2%;
+    font-size: 19px;
+    margin-right: unset;
+    color: #005a5b;
+  }
+  .tarifs_head {
+    flex: 2;
+    display: flex;
+    font-family: "R_VariableFont";
+    font-weight: bold;
+    color: #005a5b;
+    justify-content: flex-start;
+    font-size: 16px;
+    margin-top: 5%;
+  }
+  .tarifs_j {
+    flex: 1;
+  }
+
+  .tarifs_element {
+    display: flex;
+    justify-content: space-between;
+    margin-right: unset;
+    margin-left: 20px;
+    color: white;
+    font-family: "P_Regular";
+    font-size: 0.8vw;
+  }
+
+  .tarifs_band {
+    display: flex;
+    background-color: #c9b43e;
+    flex: 1;
+    padding-right: 5%;
+    padding-left: 5%;
+    justify-content: center;
+    align-items: center;
+  }
+  .tarif_pic {
+    width: 50px;
+  }
+
+  .banderole_text {
+    color: white;
+    font-size: 16px;
+    font-family: "p_Bold";
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  /*******/
+  /*VENIR*/
+  /*******/
+
+  .venir_infos {
+    display: flex;
+    flex-direction: column;
+  }
+  .venir_carte {
+    flex: 1;
+    display: flex;
+    margin-right: unset;
+  }
+  .venir_texts {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    text-align: left;
+    margin-left: unset;
+  }
+  .venir_subtitle {
+    font-size: 14px;
+  }
+  .venir_text {
+    font-size: 14px;
+  }
+
+  /*
+Spectacle
+*/
+
+  .spec_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: unset;
+    height: 75vh;
+  }
+  .spec_pic_container {
+    flex: unset;
+    display: flex;
+    justify-content: center;
+  }
+  .spec_pic {
+    flex: unset;
+  }
+  .spec_infos {
+    margin-left: unset;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+  }
+  .spec_datas {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  .spec_titre {
+    flex: 2;
+    font-family: "R_VariableFont";
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+  }
+
+  .medium_scene {
+    margin-left: 10px;
+    width: 30px;
+  }
+  .spec_cie {
+    flex: 1;
+    font-size: 14px;
+    font-style: italic;
+    font-family: "P_BoldItalic";
+  }
+  .spec_det {
+    flex: 1;
+    font-size: 14px;
+    font-family: "P_Regular";
+  }
+  .spec_resume {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    font-family: "P_Regular";
+    font-size: 14px;
+    line-height: unset;
+    font-weight: normal;
+  }
+
+  /*PROGRA*/
+
+  .progra_container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .progra_header {
+    margin-left: unset;
+  }
+  .progra_cols {
+    display: flex;
+  }
+
+  .progra_col {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: left;
+
+    margin: unset;
+  }
+
+  .progra_col_main {
+    flex: 9;
+  }
+
+  .progra_leg {
+    width: fit-content;
+  }
+
+  .legende {
+    width: 80vw;
+    aspect-ratio: 1/1;
+  }
+
+  .progra_title_day {
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .progra_list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .item {
+    margin-top: 7.5px;
+  }
+  .titre {
+    font-size: 14px;
+  }
+
+  .small_scene {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .heure {
+    color: white;
+    font-family: "R_VariableFont";
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 10px;
   }
 }

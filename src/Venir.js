@@ -1,9 +1,24 @@
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
-const containerStyle = {
+const screenWidth = window.innerWidth;
+let containerStyle = {
   width: "100%",
-  height: "400px",
+  height: "50vh",
 };
+
+if (screenWidth >= 800) {
+  containerStyle = {
+    ...containerStyle,
+    width: "100%",
+    height: "50vh",
+  };
+} else {
+  containerStyle = {
+    ...containerStyle,
+    width: "100%",
+    height: "40vh",
+  };
+}
 
 const center = {
   lat: 45.271453,
@@ -18,7 +33,7 @@ const markerPosition = {
 const Venir = () => {
   return (
     <div className="venir_container">
-      <div className="venir_title title">Comment venir</div>
+      <div className="venir_title title mobile_page_title">Comment venir</div>
       <div className="venir_infos">
         <div className="venir_carte">
           <LoadScript googleMapsApiKey="AIzaSyBwC85ta2JloE2YQQ6K5rYH3LQDPFJwYaU">
