@@ -977,7 +977,7 @@ a.dropdown-item {
     flex-direction: column;
     align-items: center;
     font-family: "R_VariableFont";
-    font-size: 25px;
+    font-size: 23px;
     background-color: #005a5b;
   }
   .nav_title {
@@ -989,7 +989,7 @@ a.dropdown-item {
     border-right: none;
     border-width: 1px;
     font-family: "R_VariableFont";
-    font-size: 15px;
+    font-size: 14px;
     font-weight: lighter;
     margin-top: 2.5%;
     margin-bottom: 5%;

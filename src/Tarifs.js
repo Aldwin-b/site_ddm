@@ -104,7 +104,7 @@ const Tarifs = () => {
       </div>
       <div className="tarifs_band">
         <img className="tarif_pic" src={concert} alt="concert logo"></img>
-        <div className="banderole_text">CONCERTS DU SOIR GATUITS !</div>
+        <div className="banderole_text">CONCERTS DU SOIR GATUITS</div>
         <img className="tarif_pic" src={concert} alt="concert logo"></img>
       </div>
     </div>

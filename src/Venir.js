@@ -40,7 +40,7 @@ const Venir = () => {
             <GoogleMap
               mapContainerStyle={containerStyle}
               center={center}
-              zoom={17}
+              zoom={15}
             >
               <Marker position={markerPosition} />
             </GoogleMap>
