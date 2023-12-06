@@ -69,11 +69,11 @@ const Tarifs = () => {
                 </div>
                 <div className="tarifs_element">
                   <div className="tarifs_text">Plein tarif</div>
-                  <div className="tarifs_text">16.00€</div>
+                  <div className="tarifs_text">20.00€</div>
                 </div>
                 <div className="tarifs_element">
                   <div className="tarifs_text">Moins de 12 ans</div>
-                  <div className="tarifs_text">8.00€</div>
+                  <div className="tarifs_text">10.00€</div>
                 </div>
               </div>
               <div>
@@ -82,11 +82,11 @@ const Tarifs = () => {
                 </div>
                 <div className="tarifs_element">
                   <div className="tarifs_text">Plein Tarif</div>
-                  <div className="tarifs_text">20.00€</div>
+                  <div className="tarifs_text">16.00€</div>
                 </div>
                 <div className="tarifs_element">
                   <div className="tarifs_text">Moins de 12 ans</div>
-                  <div className="tarifs_text">10.00€</div>
+                  <div className="tarifs_text">8.00€</div>
                 </div>
               </div>
             </div>

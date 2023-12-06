@@ -24,7 +24,7 @@ const Spectacle = () => {
         setLegScene(newLegScene);
       })
       .catch((error) => console.error(error));
-  }, [id, type]);
+  }, [id, type, dynamicPath]);
 
   return (
     <div className="spec_container">
