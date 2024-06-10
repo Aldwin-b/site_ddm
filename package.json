@@ -12,7 +12,7 @@
     "image-compressor": "^2.0.3",
     "install": "^0.13.0",
     "node-fetch": "^3.3.1",
-    "npm": "^9.5.0",
+    "npm": "^10.8.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.1",
     "react-dom": "^18.2.0",
