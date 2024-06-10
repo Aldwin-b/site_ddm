@@ -79,9 +79,6 @@ const Header = () => {
                 title="INFORMATIONS PRATIQUES"
                 id="basic-nav-dropdown"
               >
-                <NavDropdown.Item href="/programmation">
-                  Programmation 2023
-                </NavDropdown.Item>
                 <NavDropdown.Item href="/tarifs">Tarifs</NavDropdown.Item>
                 <NavDropdown.Item href="/venir">
                   Comment venir ?

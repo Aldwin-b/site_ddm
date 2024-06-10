@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 const Main = () => {
   return (
     <div className="main_container">
-      <div id="main_picture" className="main_picture_container">
-        <img src={main_picture} className="main_picture" alt="" />
-      </div>
-      <div id="text_prog" className="main_text_prog_container">
-        <div id="text" className="main_text_container">
+      <div className="main_logo_text">
+        <div id="main_picture" className="main_picture_container">
+          <img src={main_picture} className="main_picture" alt="" />
+        </div>
+        <div id="text_prog" className="main_text_prog_container">
           <span className="text_W">
             Chaque année, le temps d’un week-end, la magie de la scène illumine
             le regard des spectateur.rice.s. Drôles de Mômes permet au public
@@ -27,10 +27,13 @@ const Main = () => {
             arts de la scène.
           </span>
         </div>
+      </div>
+      <div className="bottom_main_container">
+        <div className="placeholder_"></div>
         <div id="prog" className="button_container">
-          <button className="button">
+          <button className="button" onClick="/programmation">
             <Link className="link" to="/programmation">
-              PROGRAMMATION 2023
+              PROGRAMMATION 2024
             </Link>
           </button>
         </div>
