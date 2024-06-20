@@ -47,19 +47,26 @@ const Venir = () => {
           </LoadScript>
         </div>
         <div className="venir_texts">
-          <div className="venir_subtitle">
-            En voiture
-            <span className="venir_text">
-              <span> </span>: Par l’A10 prendre la sortie 38 Montendre/St
-              Ciers-sur-Gironde Par la N10, prendre la sortie D730
-              Montendre/Montlieu-la-Garde
+          <div className="text_W venir_subtitle">
+            En train
+            <span className="text_W">
+              <span> </span>: Arrêt gare de Montendre, puis 1,4 km à pied (19
+              minutes) pour rejoindre le festival.
             </span>
           </div>
-          <div className="venir_subtitle">
+          <div className="text_W venir_subtitle">
+            En voiture
+            <span className="text_W">
+              <span> </span>: Par l’A10 prendre la sortie 38 Montendre / Saint
+              Ciers-sur-Gironde. Par la N10, prendre la sortie D730 Montendre /
+              Montlieu-la-Garde.
+            </span>
+          </div>
+          <div className="text_W venir_subtitle">
             De Montendre
-            <span className="venir_text">
+            <span className="text_W">
               <span> </span>: Prendre la direction du Lac. L’accès se fait par
-              l’avenue de Onda
+              l’avenue de Onda.
             </span>
           </div>
         </div>

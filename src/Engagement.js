@@ -1,12 +1,12 @@
 const Engagement = () => {
   return (
     <div className="engagement_container">
-      <div className="mobile_page_title">Nos engagmements</div>
+      <div className="mobile_page_title">Engagmements</div>
       <div className="engagement_title2_container">
         <div className="titleE">Territoire</div>
       </div>
       <div className="engagement_container_textB">
-        <div className="text_E">
+        <div className="text_W text_E">
           Dans l’idée de favoriser l’emploi et l’économie, nous nous entourons
           de fournisseurs locaux, concernés par notre démarche écologique. Cela
           permet de réduire l’émission de gaz à effet de serre lors des
@@ -18,7 +18,7 @@ const Engagement = () => {
         <div className="titleE">Tri des déchets</div>
       </div>
       <div className="engagement_container_textB">
-        <div className="text_E">
+        <div className="text_W text_E">
           Pour cette quinzième édition, nous voulons mettre l’accent sur le tri
           des déchets et allons mettre en place des poubelles à deux bacs avec
           des panneaux explicatifs. D’autre part, nous voulons limiter au
@@ -30,7 +30,7 @@ const Engagement = () => {
         <span className="titleE">Communication</span>
       </div>
       <div className="engagement_container_textB">
-        <div className="text_E">
+        <div className="text_W text_E">
           Nous renforçons notre présence sur Internet grâce à notre site et aux
           réseaux sociaux. Nous pouvons ainsi réduire les quantités d’impression
           pour l’affichage, tout en s’assurant d’une diffusion large de
@@ -44,7 +44,7 @@ const Engagement = () => {
         <span className="titleE">Verres réutilisables</span>
       </div>
       <div className="engagement_container_textB">
-        <div className="text_E">
+        <div className="text_W text_E">
           À maintes reprises, nous avons souhaité que les boissons soient
           servies dans des verres consignés. Il y a six ans, nous avons mis en
           service 1000 verres réutilisables. Ils ont de nouveau servi pour les
@@ -56,7 +56,7 @@ const Engagement = () => {
         <span className="titleE">Toilettes sèches</span>
       </div>
       <div className="engagement_container_textB">
-        <div className="text_E">
+        <div className="text_W text_E">
           Notre équipe tient à disposition, des toilettes sèches, symboles de
           notre engagement pour le respect de l’environnement. Un texte
           descriptif invite le public à prendre soin de ce lieu, ce qui

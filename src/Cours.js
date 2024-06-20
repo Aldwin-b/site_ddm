@@ -66,7 +66,7 @@ const Cours = () => {
               <img src={pic1} className="cours_big" alt="" />
             </div>
             <div className="cours_small_photo">
-              <div className="cours_small_photo_row">
+              <div className="cours_small_photo_row cours_top">
                 <img src={pic2} className="cours_small" alt="" />
                 <img src={pic3} className="cours_small" alt="" />
               </div>

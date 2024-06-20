@@ -69,12 +69,12 @@ const Benevoles = () => {
             <span className="text_W">
               <br />
               Drôles de Mômes c’est aussi et avant tout une grande famille de
-              bénévoles qui fait vivre et évoluer le festival depuis bientôt 16
-              ans !
+              bénévoles qui fait vivre et évoluer le festival.
+              <br />
               <br />
             </span>
             <span className="text_W">
-              Certain.es sont là depuis le début, d’autres nous ont rejoint.es
+              Certain⸱es sont là depuis le début, d’autres nous ont rejoint.es
               au fil des années pour apporter de nouvelles idées… En tout ce
               sont une quarantaine de personnes de 7 à 77 ans qui s’activent
               lors d’un week-end, mais aussi tout au long de l’année pour vous

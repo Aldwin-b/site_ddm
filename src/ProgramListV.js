@@ -70,19 +70,25 @@ const ProgramListV = () => {
     <div className="progra_list">
       {elements.map((element) => (
         <div className="item">
-          <img
-            src={getImage(element.scene)}
-            alt={element.scene}
-            className="small_scene"
-          />
-          <span className="heure">{element.heure}</span>
-          <Link
-            to={`/spectacle/V/${element.id}`}
-            state={{ id: element.id, type: "V" }}
-            className="titre"
-          >
-            {element.titre}
-          </Link>
+          <div>
+            <img
+              src={getImage(element.scene)}
+              alt={element.scene}
+              className="small_scene"
+            />
+          </div>
+          <div>
+            <span className="heure">{element.heure}</span>
+          </div>
+          <div>
+            <Link
+              to={`/spectacle/V/${element.id}`}
+              state={{ id: element.id, type: "V" }}
+              className="titre"
+            >
+              {element.titre}
+            </Link>
+          </div>
         </div>
       ))}
     </div>
