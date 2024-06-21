@@ -44,7 +44,7 @@ const Festival = () => {
         </div>
         <div className="festival_container_2">
           <div className="festival_column">
-            <img src={festival_pic_2} className="temp_pic" alt="" />
+            <img src={festival_pic_2} className="festival_pic" alt="" />
             <div className="festival_title2_container">
               <div className="title2">
                 Parler de théâtre dans un milieu rural
@@ -61,7 +61,7 @@ const Festival = () => {
             </div>
           </div>
           <div className="festival_column">
-            <img src={festival_pic_3} className="temp_pic" alt="" />
+            <img src={festival_pic_3} className="festival_pic" alt="" />
             <div className="festival_title2_container">
               <div className="title2">
                 Présenter des spectacles de grande qualité à un large public
@@ -79,7 +79,7 @@ const Festival = () => {
             </div>
           </div>
           <div className="festival_column">
-            <img src={festival_pic_4} className="temp_pic" alt="" />
+            <img src={festival_pic_4} className="festival_pic" alt="" />
             <div className="festival_title2_container">
               <span className="title2">Créer un lieu d’échange</span>
             </div>

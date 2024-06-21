@@ -84,6 +84,9 @@ const Header = () => {
             <div className="navBar_text">
               <div className="navBar_title">INFORMATIONS PRATIQUES ▾</div>
               <div className="dropdown-menu">
+                <a className="dropdown-item" href="/programmation">
+                  Programmation
+                </a>
                 <a className="dropdown-item" href="/tarifs">
                   Tarifs
                 </a>

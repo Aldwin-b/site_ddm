@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 //import Navbar from "react-bootstrap/Navbar";
 //import NavDropdown from "react-bootstrap/NavDropdown";
 
+import { BrowserRouter as Link } from "react-router-dom";
+
 import ddm from "./images/ddm_pic.png";
 import ddm_pic_mobile from "./images/ddm_pic_mobile.png";
 
@@ -128,22 +130,26 @@ const Footer = () => {
         <div className="footer_mobile">
           <div
             className={`menu navBar_text ${isDropdownVisible ? "active" : ""}`}
-            onClick={handleDropdownToggle}
           >
-            <div className="menu_item">
+            <Link className="menu_item" to="/programmation">
               <img className="menu_logo" src={prog} alt="" />
               <div className="menu_text"> PROG</div>
-            </div>
-            <div className="menu_item">
-              <img className="menu_logo" src={billets} alt="" />
-              <div className="menu_text">BILLETS</div>
-            </div>
-            <div className="menu_item">
+            </Link>{" "}
+            <Link className="menu_item" to="/venir">
               <img className="menu_logo" src={lieu} alt="" />
               <div className="menu_text">VENIR</div>
-            </div>
+            </Link>
+            <Link className="menu_item" to="/tarifs">
+              <img className="menu_logo" src={billets} alt="" />
+              <div className="menu_text">TARIFS</div>
+            </Link>
             <div className="menu_item">
-              <img className="menu_logo" src={menu} alt="" />
+              <img
+                className="menu_logo"
+                src={menu}
+                alt=""
+                onClick={handleDropdownToggle}
+              />
               <div className="menu_text">MENU</div>
             </div>
             {isDropdownVisible && (
