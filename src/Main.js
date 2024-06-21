@@ -32,7 +32,7 @@ const Main = () => {
         </div>
 
         <div id="prog" className="button_container">
-          <button className="button" onClick="/programmation">
+          <button className="button">
             <Link className="link" to="/programmation">
               PROGRAMMATION 2024
             </Link>

@@ -514,6 +514,7 @@ PROGRAMMATION
 }
 
 .item {
+  align-items: center;
   margin-top: 10px;
   display: flex;
 }
