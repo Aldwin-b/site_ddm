@@ -106,7 +106,7 @@ const Cours = () => {
               <span className="text_W">
                 L’année est divisée en deux : les cours techniques et la mise en
                 scène d’un spectacle pour le
-                <b>festival Drôles de Mômes</b>
+                <b> festival Drôles de Mômes</b>
                 . Les cours ont pour but d’apporter une technique théâtrale
                 nécessaire dans l’apprentissage du jeu : <br />
                 <br />– Le rapport à la scène <br />
@@ -137,7 +137,7 @@ const Cours = () => {
           <div className="cours_photos">
             <div className="cours_small_photo">
               <div className="cours_small_photo_row">
-                <img src={pic2} className="cours_small no_center_r" alt="" />
+                <img src={pic2} className="cours_small" alt="" />
                 <img src={pic3} className="cours_small" alt="" />
               </div>
               <div className="cours_small_photo_row">

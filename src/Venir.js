@@ -1,4 +1,5 @@
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import config from "./config/config"; // Chemin vers votre fichier config.js
 
 const screenWidth = window.innerWidth;
 let containerStyle = {
@@ -31,12 +32,13 @@ const markerPosition = {
 };
 
 const Venir = () => {
+  console.log();
   return (
     <div className="venir_container">
       <div className="venir_title title mobile_page_title">Comment venir</div>
       <div className="venir_infos">
         <div className="venir_carte">
-          <LoadScript googleMapsApiKey="AIzaSyBwC85ta2JloE2YQQ6K5rYH3LQDPFJwYaU">
+          <LoadScript googleMapsApiKey={config.mapsAPIkey}>
             <GoogleMap
               mapContainerStyle={containerStyle}
               center={center}

@@ -4,9 +4,6 @@
   "private": true,
   "dependencies": {
     "@react-google-maps/api": "^2.19.3",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.3",
     "image-compressor": "^2.0.3",
     "install": "^0.13.0",
@@ -48,5 +45,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2"
   }
 }

@@ -30,12 +30,12 @@ const Tarifs = () => {
                 <div>PRIX</div>
               </div>
               <div className="tarifs_element">
-                <div className="tarifs_text"> Plein tarif</div>
-                <div className="tarifs_text">25.00€</div>
+                <div className="tarifs_text text_W"> Plein tarif</div>
+                <div className="tarifs_text text_W">25.00€</div>
               </div>
               <div className="tarifs_element">
-                <div className="tarifs_text">Moins de 12 ans</div>
-                <div className="tarifs_text">12.50€</div>
+                <div className="tarifs_text text_W">Moins de 12 ans</div>
+                <div className="tarifs_text text_W">12.50€</div>
               </div>
             </div>
             <div className="tarifs_day">
@@ -46,12 +46,12 @@ const Tarifs = () => {
 
               <div>
                 <div className="tarifs_element">
-                  <div className="tarifs_text">Plein tarif</div>
-                  <div className="tarifs_text">12.00€</div>
+                  <div className="tarifs_text text_W">Plein tarif</div>
+                  <div className="tarifs_text text_W">12.00€</div>
                 </div>
                 <div className="tarifs_element">
-                  <div className="tarifs_text">Moins de 12 ans</div>
-                  <div className="tarifs_text">6.00€</div>
+                  <div className="tarifs_text text_W">Moins de 12 ans</div>
+                  <div className="tarifs_text text_W">6.00€</div>
                 </div>
               </div>
             </div>
@@ -64,20 +64,20 @@ const Tarifs = () => {
                 <div>PRIX</div>
               </div>
               <div className="tarifs_element">
-                <div className="tarifs_text">Spectacle jeune public</div>
-                <div className="tarifs_text">5.00€</div>
+                <div className="tarifs_text text_W">Spectacle jeune public</div>
+                <div className="tarifs_text text_W">5.00€</div>
               </div>
               <div>
                 <div className="tarifs_head">
                   <div>JOURNÉE COMPLÈTE</div>
                 </div>
                 <div className="tarifs_element">
-                  <div className="tarifs_text">Plein tarif</div>
-                  <div className="tarifs_text">20.00€</div>
+                  <div className="tarifs_text text_W">Plein tarif</div>
+                  <div className="tarifs_text text_W">20.00€</div>
                 </div>
                 <div className="tarifs_element">
-                  <div className="tarifs_text">Moins de 12 ans</div>
-                  <div className="tarifs_text">10.00€</div>
+                  <div className="tarifs_text text_W">Moins de 12 ans</div>
+                  <div className="tarifs_text text_W">10.00€</div>
                 </div>
               </div>
               <div>
@@ -85,18 +85,18 @@ const Tarifs = () => {
                   <div>À PARTIR DE 14H</div>
                 </div>
                 <div className="tarifs_element">
-                  <div className="tarifs_text">Plein tarif</div>
-                  <div className="tarifs_text">16.00€</div>
+                  <div className="tarifs_text text_W">Plein tarif</div>
+                  <div className="tarifs_text text_W">16.00€</div>
                 </div>
                 <div className="tarifs_element">
-                  <div className="tarifs_text">Moins de 12 ans</div>
-                  <div className="tarifs_text">8.00€</div>
+                  <div className="tarifs_text text_W">Moins de 12 ans</div>
+                  <div className="tarifs_text text_W">8.00€</div>
                 </div>
                 <div className="tarifs_bonus">
                   <div className="tarifs_element tarifs_bonus_text ">
                     {isSmallScreen
-                      ? "( Boisson offerte si vous arrivez avant 14h )"
-                      : " Boisson offerte si vous arrivez dès 14h"}
+                      ? "Boisson offerte si vous arrivez pour le premier spectacle de l'après-midi"
+                      : " Boisson offerte si vous arrivez pour le premier spectacle de l'après-midi"}
                   </div>
                 </div>
               </div>

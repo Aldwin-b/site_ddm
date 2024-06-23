@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const Spectacle = () => {
-  const location = useLocation();
-  const { id, type } = location.state;
+  //const location = useLocation();
+  const { type, id } = useParams();
   const [data, setData] = useState(null);
   const dynamicPath = "/spectacles/" + type + "/" + id + ".json";
   const [imageSrc, setImageSrc] = useState("");
@@ -15,9 +15,6 @@ const Spectacle = () => {
       .then((response) => response.json())
       .then((data) => {
         setData(data);
-        console.log(data && data.scene);
-        console.log(data && data.titre);
-
         const newImageSrc = `/images/spectacles/${type}/${id}.jpg`;
         const newLegScene = `/images/scenes/${data && data.scene}.png`;
         setImageSrc(newImageSrc);
@@ -25,6 +22,10 @@ const Spectacle = () => {
       })
       .catch((error) => console.error(error));
   }, [id, type, dynamicPath]);
+
+  if (!id || !type) {
+    return <div>Invalid Spectacle Data</div>;
+  }
 
   return (
     <div className="spec_container">

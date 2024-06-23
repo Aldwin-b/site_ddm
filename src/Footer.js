@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 //import Navbar from "react-bootstrap/Navbar";
 //import NavDropdown from "react-bootstrap/NavDropdown";
 
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import ddm from "./images/ddm_pic.png";
 import ddm_pic_mobile from "./images/ddm_pic_mobile.png";

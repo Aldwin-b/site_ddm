@@ -13,7 +13,7 @@ const Festival = () => {
 
   if (screenWidth >= 800) {
     return (
-      <div className="festival_container">
+      <div>
         <div className="festival_container_1">
           <div id="text" className="festival_text">
             <div className="title">Le festival</div>
@@ -45,50 +45,40 @@ const Festival = () => {
         <div className="festival_container_2">
           <div className="festival_column">
             <img src={festival_pic_2} className="festival_pic" alt="" />
-            <div className="festival_title2_container">
-              <div className="title2">
-                Parler de théâtre dans un milieu rural
-              </div>
+            <div className="festival_title2 title2">
+              Parler de théâtre dans un milieu rural
             </div>
-            <div className="festival_container_textB">
-              <div className="text_B">
-                Pour cette dix-septième édition, nous investirons à nouveau le
-                site du lac de Montendre. Nous proposerons des spectacles de
-                théâtre sous toutes ses formes et de musique à un public n’ayant
-                que peu accès au ce type d’activités culturelles le reste de
-                l’année.
-              </div>
+            <div className="festival_text_B text_B">
+              Pour cette dix-septième édition, nous investirons à nouveau le
+              site du lac de Montendre. Nous proposerons des spectacles de
+              théâtre sous toutes ses formes et de musique à un public n’ayant
+              que peu accès au ce type d’activités culturelles le reste de
+              l’année.
             </div>
           </div>
           <div className="festival_column">
             <img src={festival_pic_3} className="festival_pic" alt="" />
-            <div className="festival_title2_container">
-              <div className="title2">
-                Présenter des spectacles de grande qualité à un large public
-              </div>
+            <div className="festival_title2 title2">
+              Présenter des spectacles de grande qualité à un large public
             </div>
-            <div className="festival_container_textB">
-              <div className="text_B">
-                Lors du festival, la scène est partagée entre jeunes amateurs et
-                professionnels. Les spectacles amateurs ne sont pas médiocres
-                pour autant. Nous privilégions la venue de troupes proposant des
-                pièces de grande qualité et jouissant d’une mise en scène et
-                d’un jeu de comédiens souvent dignes de spectacles
-                professionnels.
-              </div>
+
+            <div className="festival_text_B text_B">
+              Lors du festival, la scène est partagée entre jeunes amateurs et
+              professionnels. Les spectacles amateurs ne sont pas médiocres pour
+              autant. Nous privilégions la venue de troupes proposant des pièces
+              de grande qualité et jouissant d’une mise en scène et d’un jeu de
+              comédiens souvent dignes de spectacles professionnels.
             </div>
           </div>
           <div className="festival_column">
             <img src={festival_pic_4} className="festival_pic" alt="" />
-            <div className="festival_title2_container">
-              <span className="title2">Créer un lieu d’échange</span>
+            <div className="festival_title2 title2">
+              Créer un lieu d’échange
             </div>
-            <div className="festival_container_textB">
-              <div className="text_B">
-                A l’issue des représentations, des séances de discussion et de
-                débat entre les artistes et leur public sont organisées dans une
-                tente berbère installée sur le site du festival.
-              </div>
+            <div className="festival_text_B text_B">
+              A l’issue des représentations, des séances de discussion et de
+              débat entre les artistes et leur public sont organisées dans une
+              tente berbère installée sur le site du festival.
             </div>
           </div>
         </div>
@@ -279,8 +269,8 @@ const Festival = () => {
           <div className="festival_title2_container">
             <div className="title2">Parler de théâtre dans un milieu rural</div>
           </div>
-          <div className="festival_container_textB">
-            <div className="text_B">
+          <div className="festival_container_text">
+            <div className="text_W">
               Pour cette dix-septième édition, nous investirons à nouveau le
               site du lac de Montendre. Nous proposerons des spectacles de
               théâtre sous toutes ses formes et de musique à un public n’ayant
@@ -296,8 +286,8 @@ const Festival = () => {
               Présenter des spectacles de grande qualité à un large public
             </div>
           </div>
-          <div className="festival_container_textB">
-            <div className="text_B">
+          <div className="festival_container_text">
+            <div className="text_W">
               Lors du festival, la scène est partagée entre jeunes amateurs et
               professionnels. Les spectacles amateurs ne sont pas médiocres pour
               autant. Nous privilégions la venue de troupes proposant des pièces
@@ -311,8 +301,8 @@ const Festival = () => {
           <div className="festival_title2_container">
             <span className="title2">Créer un lieu d’échange</span>
           </div>
-          <div className="festival_container_textB">
-            <div className="text_B">
+          <div className="festival_container_text">
+            <div className="text_W">
               A l’issue des représentations, des séances de discussion et de
               débat entre les artistes et leur public sont organisées dans une
               tente berbère installée sur le site du festival.
@@ -327,8 +317,8 @@ const Festival = () => {
               amateurs
             </span>
           </div>
-          <div className="festival_container_textB">
-            <div className="text_B">
+          <div className="festival_container_text">
+            <div className="text_W">
               Notre volonté est de permettre à l’enfant d’être le maître de
               cérémonie, de créer un espace de rencontre et d’expression au
               travers du spectacle vivant. Dans un désir de pédagogie, nous
@@ -352,8 +342,8 @@ const Festival = () => {
           <div className="festival_title2_container">
             <span className="title2">Un événement écoresponsable</span>
           </div>
-          <div className="festival_container_textB">
-            <div className="text_B">
+          <div className="festival_container_text">
+            <div className="text_W">
               Nous ne souhaitons pas seulement viser le jeune public mais tous
               ceux qui aiment le théâtre sous toutes ses formes, ainsi que tous
               ceux qui sont prêts à le découvrir. Les spectacles proposés
@@ -371,8 +361,8 @@ const Festival = () => {
           <div className="festival_title2_container">
             <span className="title2">Créer un lieu d’échange</span>
           </div>
-          <div className="festival_container_textB">
-            <div className="text_B">
+          <div className="festival_container_text">
+            <div className="text_W">
               Depuis plusieurs années, nous abordons le festival selon la
               démarche suivante :
               <ul>
