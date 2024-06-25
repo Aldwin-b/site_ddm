@@ -104,7 +104,7 @@ const Header = () => {
       <nav>
         <div className="header_mobile">
           <div className="central_logo">
-            <a className="link_main" href="/">
+            <a href="/">
               <img className="logo" src={ddm_pic_mobile} alt="" />
             </a>
           </div>

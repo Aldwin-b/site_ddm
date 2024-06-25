@@ -81,13 +81,13 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer_links">
-          <a className="link" href="/programmation">
+          <a className="link text_small_W" href="/programmation">
             PROGRAMMATION 2024
           </a>
-          <a className="link" href="/venir">
+          <a className="link text_small_W" href="/venir">
             COMMENT VENIR
           </a>
-          <a className="link" href="/tarifs">
+          <a className="link text_small_W" href="/tarifs">
             TARIFS
           </a>
         </div>

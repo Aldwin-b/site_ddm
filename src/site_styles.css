@@ -903,15 +903,28 @@ a.dropdown-item {
     padding-right: 12%;
   }
   .header_mobile {
-    background-color: var(--color-secondary);
-    padding-top: 2%;
-    padding-bottom: 2%;
-    height: 10vh;
     display: flex;
+    background-color: var(--color-secondary);
+    height: 10vh;
     position: fixed;
-    justify-content: center;
     width: 100%;
     z-index: 1000;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .central_logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 2.5%;
+  }
+
+  .logo {
+    height: 100%;
+    width: 40vw;
   }
 
   .footer_mobile {
@@ -924,6 +937,7 @@ a.dropdown-item {
     width: 100%;
     align-items: center;
     z-index: 1000;
+    padding-top: 2%;
   }
 
   .menu {
@@ -950,18 +964,6 @@ a.dropdown-item {
     padding-top: 5%;
   }
 
-  .central_logo {
-  }
-
-  .link_main {
-  }
-
-  .logo {
-    flex: 1;
-    height: 100%;
-    max-width: fit-content;
-  }
-
   .menu_link {
     justify-content: center;
     align-items: center;
@@ -985,7 +987,7 @@ a.dropdown-item {
     width: 100%;
     height: 100%;
     background-color: var(--color-secondary);
-    z-index: 999;
+    z-index: 1999;
     padding-left: 15%;
     color: white;
   }
@@ -1053,7 +1055,7 @@ a.dropdown-item {
   }
 
   .overlay_footer {
-    flex: 4;
+    flex: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
