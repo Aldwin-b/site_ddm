@@ -93,7 +93,7 @@ const Footer = () => {
         </div>
         <div className="footer_contact">
           <div className="footer_text">NOUS CONTACTER</div>
-          <a href="mailto:machinesabulles@orange.fr" onClick={handleMailClick}>
+          <a href="mailto:machinabulles@orange.fr" onClick={handleMailClick}>
             <img
               className="footer_mail"
               alt="Logo mail pour contacter DDM"
@@ -219,7 +219,7 @@ const Footer = () => {
                     </a>
                     <a
                       className="link_rs"
-                      href="mailto:machinesabulles@orange.fr"
+                      href="mailto:machinabulles@orange.fr"
                       onClick={handleMailClick}
                     >
                       <img
