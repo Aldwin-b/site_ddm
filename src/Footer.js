@@ -69,7 +69,7 @@ const Footer = () => {
   };
   const handleMailClick = (e) => {
     e.preventDefault();
-    window.open("mailto:machineabulles@orange.fr");
+    window.open("mailto:machinabulles@orange.fr");
   };
 
   if (screenWidth >= 800) {
