@@ -12,6 +12,7 @@ import Venir from "./Venir";
 import Progra from "./Progra";
 import Spectacle from "./Spectacle";
 import Engagement from "./Engagement";
+import Partenaires from "./Partenaires.js";
 function App() {
   return (
     <div className="The_container">
@@ -24,6 +25,7 @@ function App() {
             <Route path="/" element={<Main />} />
             <Route path="/festival" element={<Festival />} />
             <Route path="/benevoles" element={<Benevoles />} />
+            <Route path="/partenaires" element={<Partenaires />} />
             <Route path="/matchsimpro" element={<MatchsImpro />} />
             <Route path="/cours" element={<Cours />} />
             <Route path="/tarifs" element={<Tarifs />} />

@@ -52,6 +52,9 @@ const Header = () => {
                 <a className="dropdown-item" href="/benevoles">
                   Les bénévoles
                 </a>
+                <a className="dropdown-item" href="/partenaires">
+                  Les partenaires
+                </a>
               </div>
             </div>
           </div>
