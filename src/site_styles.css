@@ -988,7 +988,7 @@ a.dropdown-item {
     z-index: 1000;
     padding-top: 2%;
   }
-  f .menu {
+  .menu {
     display: flex;
     align-items: baseline;
     justify-content: space-around;
