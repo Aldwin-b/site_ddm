@@ -1344,6 +1344,41 @@ a.dropdown-item {
     height: 100vh; /* Ajustez la hauteur selon vos besoins */
     z-index: inherit;
   }
+
+  .edition_container {
+    margin-top: 10%;
+  }
+  .editon_title {
+    font-size: 5vw;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+
+  .match_button_container {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin-top: 5%;
+  }
+
+  .match_button {
+    all: unset;
+    color: white;
+    text-align: center;
+    padding: 1%;
+    margin: 2.5%;
+    border-radius: 50px;
+    background-color: var(--color-secondary);
+  }
+
+  .match_pro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+  }
+  .match_pro_text {
+    margin-top: 10%;
+  }
   /*
   .carousel_container {
     flex: 1;
@@ -1372,19 +1407,14 @@ a.dropdown-item {
     display: flex;
     flex-direction: column;
   }
-  .vocab_row {
-    display: flex;
-  }
-  .vocab_col {
-    flex: 1;
-    margin-left: 10px;
-    margin-right: 10px;
+  .vocab_container {
+    margin-top: 2.5%;
   }
   .vocab_title {
     color: white;
     font-weight: bold;
+    margin-top: 7.5%;
     font-size: 20px;
-    margin-bottom: 5px;
   }
   .vocab_text {
     color: white;
