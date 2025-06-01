@@ -82,7 +82,7 @@ const Footer = () => {
         </div>
         <div className="footer_links">
           <a className="link text_small_W" href="/programmation">
-            PROGRAMMATION 2024
+            PROGRAMMATION 2025
           </a>
           <a className="link text_small_W" href="/venir">
             COMMENT VENIR
@@ -160,7 +160,7 @@ const Footer = () => {
                       <img className="logoW" src={ddm_pic_mobile} alt="" />
                     </a>
                     <div className="text_overlay">
-                      Les 12 & 13 juillet 2024 au lac de Montendre
+                      Les 11 & 12 juillet 2025 au lac de Montendre
                     </div>
                     <a className="link" href="/programmation">
                       <div className="nav_sub">PROGRAMMATION</div>
