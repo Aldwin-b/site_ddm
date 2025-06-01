@@ -40,7 +40,7 @@ const Tarifs = () => {
             </div>
             <div className="tarifs_day">
               <div className="tarifs_subtitle tarifs_vendredi">
-                <div>VENDREDI 12 JUILLET</div>
+                <div>VENDREDI 11 JUILLET</div>
                 <div>PRIX</div>
               </div>
 
@@ -60,7 +60,7 @@ const Tarifs = () => {
           <div className="tarifs">
             <div className="tarifs_day">
               <div className="tarifs_subtitle">
-                <div>SAMEDI 13 JUILLET</div>
+                <div>SAMEDI 12 JUILLET</div>
                 <div>PRIX</div>
               </div>
               <div className="tarifs_element">
