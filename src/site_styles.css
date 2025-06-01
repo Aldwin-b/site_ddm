@@ -573,6 +573,7 @@ PROGRAMMATION
 .progra_title_day {
   font-size: 2vw;
   font-weight: bold;
+  font-family: "R_VariableFont";
 }
 
 .item {
@@ -624,7 +625,7 @@ Spectacle
 .spec_container {
   display: flex;
   margin: 5%;
-  margin-top: 2.5%;
+  margin-top: 0%;
   margin-bottom: 0%;
 }
 .spec_pic_container {
@@ -663,7 +664,7 @@ Spectacle
 
 .medium_scene {
   margin-left: 2.5%;
-  width: 30px;
+  width: 50px;
 }
 .spec_cie {
   flex: 1;
@@ -1141,14 +1142,13 @@ a.dropdown-item {
   }
   .main_title {
     font-size: 20px;
-    margin-bottom: 10%;
   }
 
   .main_picture_container {
     display: flex;
     flex: 1;
-    margin-top: 5%;
-    padding-bottom: 7.5%;
+    margin-top: 15%;
+    margin-bottom: 15%;
     justify-content: center;
   }
   .main_picture {
@@ -1176,7 +1176,7 @@ a.dropdown-item {
   .button_container {
     margin-top: 5%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   .button {
@@ -1188,6 +1188,7 @@ a.dropdown-item {
     font-size: 17px;
     font-weight: bolder;
     border-radius: 5px;
+    padding: 1% 3%;
   }
 
   .mobile_page_title {
@@ -1647,18 +1648,13 @@ Spectacle
 */
 
   .spec_container {
-    display: flex;
     flex-direction: column;
     margin-top: 5%;
   }
   .spec_pic_container {
-    flex: unset;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 5%;
   }
-  .spec_pic {
-    flex: unset;
-  }
+
   .spec_infos {
     margin-left: unset;
     display: flex;
@@ -1678,6 +1674,8 @@ Spectacle
     font-size: 25px;
     display: flex;
     align-items: center;
+    line-height: 1;
+    margin: 5% 0;
   }
 
   .medium_scene {
@@ -1691,6 +1689,7 @@ Spectacle
     font-family: "P_BoldItalic";
   }
   .spec_det {
+    margin-top: 2.5%;
     flex: 1;
     font-size: 14px;
     font-family: "P_Regular";
@@ -1727,7 +1726,7 @@ Spectacle
     flex-direction: column;
     align-items: left;
     margin: unset;
-    padding-bottom: 15%;
+    padding-top: 15%;
   }
 
   .progra_col_main {
@@ -1751,6 +1750,7 @@ Spectacle
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 5%;
   }
   .small_scene {
     width: 30px;
@@ -1765,6 +1765,7 @@ Spectacle
   }
 
   .progra_title_day {
+    font-family: "R_VariableFont";
     font-size: 25px;
     margin-top: 5px;
     margin-bottom: 5px;

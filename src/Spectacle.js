@@ -30,21 +30,13 @@ const Spectacle = () => {
   return (
     <div className="spec_container">
       <div className="spec_pic_container">
-        <img
-          src={imageSrc}
-          alt="Surement pas un .JPG /!\\"
-          className="spec_pic"
-        />
+        <img src={imageSrc} alt=" " className="spec_pic" />
       </div>
       <div className="spec_infos">
         <div className="spec_datas">
           <div className="spec_titre">
             {data && data.titre}{" "}
-            <img
-              src={legScene}
-              alt="Pas une bonne scène (ou pas un png)"
-              className="medium_scene"
-            />
+            <img src={legScene} alt=" " className="medium_scene" />
           </div>
           <div className="spec_cie">{data && data.cie}</div>
           <div className="spec_det">{data && data.set}</div>

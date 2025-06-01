@@ -29,7 +29,7 @@ const Progra = () => {
         <div className="progra_cols">
           <div className="progra_col">
             <div className="title">
-              <div className="progra_title_day "> VENDREDI 12 JUILLET</div>
+              <div className="progra_title_day "> VENDREDI 11 JUILLET</div>
             </div>
             <div className="progra_col_main">
               <ProgramListV />
@@ -37,7 +37,7 @@ const Progra = () => {
           </div>
           <div className="progra_col">
             <div className="title">
-              <div className="progra_title_day "> SAMEDI 13 JUILLET</div>
+              <div className="progra_title_day "> SAMEDI 12 JUILLET</div>
             </div>
             <div className="progra_col_main">
               <ProgramListS />
@@ -84,7 +84,7 @@ const Progra = () => {
           <div>
             <div className="progra_col">
               <div className="progra_title">
-                <div className="progra_title_day "> VENDREDI 12</div>
+                <div className="progra_title_day "> VENDREDI 11</div>
               </div>
               <div className="progra_col_main">
                 <ProgramListV />
@@ -92,7 +92,7 @@ const Progra = () => {
             </div>
             <div className="progra_col">
               <div className="progra_title">
-                <div className="progra_title_day "> SAMEDI 13</div>
+                <div className="progra_title_day "> SAMEDI 12</div>
               </div>
               <div className="progra_col_main">
                 <ProgramListS />

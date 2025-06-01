@@ -49,7 +49,7 @@ const MatchsImpro = () => {
           </div>
           <div className="match_button_container text_W">
             <button onClick={() => setActiveTab(1)} className="match_button">
-              PROCHAINE ÉDITION
+              ÉDITION 2025
             </button>
             <button onClick={() => setActiveTab(2)} className="match_button">
               ÉDITIONS PRÉCÉDENTES
@@ -65,7 +65,7 @@ const MatchsImpro = () => {
           {activeTab === 1 && (
             <div className="match_pro">
               <div className="match_pro_text">
-                <div className="match_pro_title title">Prochaine édition</div>
+                <div className="match_pro_title title">Édition 2025</div>
                 <div className="text_W">
                   Cher public, vous êtes invités à la toute première cérémonie
                   des Golden Mômes.
@@ -85,7 +85,11 @@ const MatchsImpro = () => {
                 </div>
               </div>
               <div className="match_affiche">
-                <img src={match_2025} className="match_affiche_pic"></img>
+                <img
+                  src={match_2025}
+                  className="match_affiche_pic"
+                  alt=""
+                ></img>
               </div>
             </div>
           )}
@@ -230,7 +234,11 @@ const MatchsImpro = () => {
           {activeTab === 1 && (
             <div className="match_pro">
               <div className="match_affiche">
-                <img src={match_2025} className="match_affiche_pic"></img>
+                <img
+                  src={match_2025}
+                  className="match_affiche_pic"
+                  alt=""
+                ></img>
               </div>
               <div className="match_pro_text">
                 <div className="text_W">

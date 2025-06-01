@@ -63,7 +63,7 @@ const Header = () => {
               <div className="navBar_title">LES MATCHS D'IMPROS ▾</div>
               <div className="dropdown-menu">
                 <a className="dropdown-item" href="/matchsimpro?match=1">
-                  Prochaine édition
+                  Édition 2025
                 </a>
                 <a className="dropdown-item" href="/matchsimpro?match=2">
                   Éditions précédentes

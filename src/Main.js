@@ -1,4 +1,4 @@
-import main_picture from "./images/matchs/25/match_2025.jpg";
+import main_picture from "./images/main_picture.jpg";
 import { Link } from "react-router-dom";
 
 const Main = () => {
@@ -8,28 +8,25 @@ const Main = () => {
         <img src={main_picture} className="main_picture" alt="" />
       </div>
       <div className="main_logo_text">
-        <div className=" title main_title">Soirée match d'impro</div>
+        <div className=" title main_title"></div>
         <div id="text_prog" className="main_text_prog_container">
           <span className="text_W">
-            <b> Le samedi 5 avril dès 20h</b>, assistez à la toute première
-            cérémonie des Golden Mômes, une soirée de remise de prix célébrant
-            les vingt dernières années de l'association La Machine à Bulles et
-            du festival Drôles de Mômes.
+            <b> 20 ANS</b> de théâtre, de musique, d’émotions, de convivialité,
+            de partage, de chapiteau, de bottes de paille, de toilettes sèches,
+            de frites, de guirlandes colorées, de tivoli, de tente à palabres,
+            d’émerveillement et de trac !
             <br />
             <br />
-            L'entrée sera à <b>prix libre</b> et tous les bénéfices de la soirée
-            serviront à organiser la prochaine du festival Drôles de Mômes{" "}
-            <b>les 11 et 12 juillet 2025 !</b> <br />
-            <br />
-            Le match d'improvisation sera suivi d'un concert du groupe BoKaL et
-            d'un DJ set surprise.
+            Pour fêter ça, nous avons caché un peu partout sur le site des
+            éléments de toutes nos affiches depuis 2005. Si vous en trouvez un,
+            vous découvrirez au dos quel petit cadeau sera le vôtre !
           </span>
         </div>
 
         <div id="prog" className="button_container">
           <button className="button">
-            <Link className="link" to="/matchsimpro?match=1">
-              EN SAVOIR PLUS{" "}
+            <Link className="link" to="/programmation">
+              PROGRAMMATION 2025{" "}
             </Link>
           </button>
         </div>

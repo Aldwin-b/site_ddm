@@ -70,6 +70,12 @@ const Venir = () => {
               l’avenue de Onda.
             </span>
           </div>
+          <div className="text_W venir_subtitle">
+            Dormir sur place
+            <span className="text_W">
+              <span> </span>: Camping Domaine du Lac à Montendre
+            </span>
+          </div>
         </div>
       </div>
     </div>
