@@ -48,14 +48,22 @@ const MatchsImpro = () => {
             </div>
           </div>
           <div className="match_button_container text_W">
-            <button onClick={() => setActiveTab(1)} className="match_button">
-              ÉDITION 2025
+            <button
+              onClick={() => setActiveTab(1)}
+              className={`match_button ${activeTab === 1 ? "active" : ""}`}
+            >
+              PROCHAINE ÉDITION
             </button>
-            <button onClick={() => setActiveTab(2)} className="match_button">
+            <button
+              onClick={() => setActiveTab(2)}
+              className={`match_button ${activeTab === 2 ? "active" : ""}`}
+            >
               ÉDITIONS PRÉCÉDENTES
             </button>
-            <button onClick={() => setActiveTab(3)} className="match_button">
-              {" "}
+            <button
+              onClick={() => setActiveTab(3)}
+              className={`match_button ${activeTab === 3 ? "active" : ""}`}
+            >
               VOCABULAIRE
             </button>
           </div>
@@ -218,14 +226,22 @@ const MatchsImpro = () => {
           </div>
         </div>{" "}
         <div className="match_button_container text_W">
-          <button onClick={() => setActiveTab(1)} className="match_button">
+          <button
+            onClick={() => setActiveTab(1)}
+            className={`match_button ${activeTab === 1 ? "active" : ""}`}
+          >
             PROCHAINE ÉDITION
           </button>
-          <button onClick={() => setActiveTab(2)} className="match_button">
+          <button
+            onClick={() => setActiveTab(2)}
+            className={`match_button ${activeTab === 2 ? "active" : ""}`}
+          >
             ÉDITIONS PRÉCÉDENTES
           </button>
-          <button onClick={() => setActiveTab(3)} className="match_button">
-            {" "}
+          <button
+            onClick={() => setActiveTab(3)}
+            className={`match_button ${activeTab === 3 ? "active" : ""}`}
+          >
             VOCABULAIRE
           </button>
         </div>

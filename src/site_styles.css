@@ -421,6 +421,12 @@ MATCHS D'IMPROS
   background-color: var(--color-secondary);
 }
 
+.match_button:hover {
+  background-color: #9bbabb;
+}
+.active {
+  background-color: #9bbabb;
+}
 .match_pro {
   display: flex;
 }
@@ -710,6 +716,7 @@ TARIFS
 }
 
 .tarifs_bonus {
+  visibility: hidden;
   margin-top: 5%;
 }
 .tarifs_day {

@@ -18,7 +18,7 @@ const ProgramListV = () => {
       id: 2,
       scene: "chap",
       heure: "11H30",
-      titre: "Babborco, l’orge roi",
+      titre: "Babborco, l’ogre roi",
       lien: "",
     },
     {
@@ -67,7 +67,7 @@ const ProgramListV = () => {
       id: 9,
       scene: "musique",
       heure: "22H45",
-      titre: "Flo/so",
+      titre: "Moloch monolyth",
       lien: "Paramètre 4",
     },
     {
