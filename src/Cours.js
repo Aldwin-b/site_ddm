@@ -18,13 +18,11 @@ const Cours = () => {
             <div className="cours_text1">
               <span className="text_W">
                 Notre association La Machine à Bulles propose des cours d’art
-                dramatique pour les enfants et adolesecent.e.s. Cette année
-                2022-2023, deux ateliers sont proposés :<br />
-                <br />– Cours pour les 12-17 ans avec Alice Mourgues le vendredi
+                dramatique pour les enfants et adolesecent.e.s. Cette année, un
+                atelier d’art dramatique est proposé :<br />
+                <br />– Cours pour les 13-18 ans avec Alice Mourgues le vendredi
                 de 18 à 20h
                 <br />
-                <br /> – Cours pour les 7-11 ans avec Paloma Diez le samedi de
-                11 à 12h30
               </span>
             </div>
 
@@ -90,13 +88,11 @@ const Cours = () => {
             <div className="cours_text1">
               <span className="text_W">
                 Notre association La Machine à Bulles propose des cours d’art
-                dramatique pour les enfants et adolesecent.e.s. Cette année
-                2022-2023, deux ateliers sont proposés :<br />
-                <br />– Cours pour les 12-17 ans avec Alice Mourgues le vendredi
+                dramatique pour les enfants et adolesecent.e.s. Cette année un
+                atelier est proposé :<br />
+                <br />– Cours pour les 13-18 ans avec Alice Mourgues le vendredi
                 de 18 à 20h
                 <br />
-                <br /> – Cours pour les 7-11 ans avec Paloma Diez le samedi de
-                11 à 12h30
               </span>
             </div>
             <div className="cours_photo">

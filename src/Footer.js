@@ -8,7 +8,7 @@ import ddm from "./images/ddm_pic.png";
 import ddm_pic_mobile from "./images/ddm_pic_mobile.png";
 
 import menu from "./images/menu.png";
-import prog from "./images/icone_prog.png";
+//import prog from "./images/icone_prog.png";
 import lieu from "./images/icone_lieu.png";
 import billets from "./images/icone_billet.png";
 
@@ -25,7 +25,7 @@ const Footer = () => {
       window.open(
         "https://www.facebook.com/profile.php?id=100063738302856",
         "_blank",
-        "noopener,noreferrer"
+        "noopener,noreferrer",
       );
     } else {
       window.open("fb://page/115574428470193", "_blank", "noopener,noreferrer");
@@ -36,13 +36,13 @@ const Footer = () => {
       window.open(
         "https://www.instagram.com/droles2momes/",
         "_blank",
-        "noopener,noreferrer"
+        "noopener,noreferrer",
       );
     } else {
       window.open(
         "instagram://user?username=droles2momes",
         "_blank",
-        "noopener,noreferrer"
+        "noopener,noreferrer",
       );
     }
   };
@@ -131,10 +131,10 @@ const Footer = () => {
           <div
             className={`menu navBar_text ${isDropdownVisible ? "active" : ""}`}
           >
-            <Link className="menu_item" to="/programmation">
+            {/*} <Link className="menu_item" to="/programmation">
               <img className="menu_logo" src={prog} alt="" />
               <div className="menu_text"> PROG</div>
-            </Link>{" "}
+            </Link>{" "}*/}
             <Link className="menu_item" to="/venir">
               <img className="menu_logo" src={lieu} alt="" />
               <div className="menu_text">VENIR</div>
@@ -160,11 +160,11 @@ const Footer = () => {
                       <img className="logoW" src={ddm_pic_mobile} alt="" />
                     </a>
                     <div className="text_overlay">
-                      Les 11 & 12 juillet 2025 au lac de Montendre
+                      Les 10 & 11 juillet 2026 au lac de Montendre
                     </div>
-                    <a className="link" href="/programmation">
+                    {/*<a className="link" href="/programmation">
                       <div className="nav_sub">PROGRAMMATION</div>
-                    </a>
+                    </a>*/}
                   </div>
                   <div className="nav_mobile">
                     <div className="nav_menu">

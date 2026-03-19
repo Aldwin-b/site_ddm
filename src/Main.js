@@ -11,25 +11,28 @@ const Main = () => {
         <div className=" title main_title"></div>
         <div id="text_prog" className="main_text_prog_container">
           <span className="text_W">
-            <b> 20 ANS</b> de théâtre, de musique, d’émotions, de convivialité,
-            de partage, de chapiteau, de bottes de paille, de toilettes sèches,
-            de frites, de guirlandes colorées, de tivoli, de tente à palabres,
-            d’émerveillement et de trac !
-            <br />
-            <br />
-            Pour fêter ça, nous avons caché un peu partout sur le site des
-            éléments de toutes nos affiches depuis 2005. Si vous en trouvez un,
-            vous découvrirez au dos quel petit cadeau sera le vôtre !
+            <b>
+              La vingtième édition du festival Drôles de Mômes aura lieu les 10
+              et 11 juillet 2026 sur un tout nouveau site !
+            </b>{" "}
+            <br /> <br />
+            Depuis 10 ans, notre festival avait posé ses valises sur une des
+            rives du Lac de Montendre et nous y adorons son côté bucolique.
+            Cependant, des problèmes de chaleur excessive à répétition nous ont
+            fait repenser notre position géographique et changer de rive tout en
+            restant sur le site du lac Baron Desqueyroux. Ce nouveau lieu
+            bénéficie de beaucoup plus de zones d’ombre, ce qui nous permettra
+            de vous accueillir dans des conditions optimales, même par forte
+            chaleur.
           </span>
         </div>
-
-        <div id="prog" className="button_container">
-          <button className="button">
-            <Link className="link" to="/programmation">
-              PROGRAMMATION 2025{" "}
-            </Link>
-          </button>
-        </div>
+        {
+          <div id="prog" className="button_container">
+            <button className="button">
+              <Link className="link">PROGRAMMATION À VENIR </Link>
+            </button>
+          </div>
+        }
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import match_2025 from "./images/matchs/25/match_2025.jpg";
+//import match_2025 from "./images/matchs/25/match_2025.jpg";
 
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
@@ -9,15 +9,18 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const MatchsImpro = () => {
   const screenWidth = window.innerWidth;
   const images22 = Array.from({ length: 8 }, (_, i) =>
-    require(`./images/matchs/22/match_22_${i + 1}.jpg`)
+    require(`./images/matchs/22/match_22_${i + 1}.jpg`),
   );
 
   const images23 = Array.from({ length: 10 }, (_, i) =>
-    require(`./images/matchs/23/match_23_${i + 1}.jpg`)
+    require(`./images/matchs/23/match_23_${i + 1}.jpg`),
   );
 
   const images24 = Array.from({ length: 10 }, (_, i) =>
-    require(`./images/matchs/24/match_24_${i + 1}.jpg`)
+    require(`./images/matchs/24/match_24_${i + 1}.jpg`),
+  );
+  const images25 = Array.from({ length: 18 }, (_, i) =>
+    require(`./images/matchs/25/match_25_${i + 1}.jpg`),
   );
 
   const query = new URLSearchParams(useLocation().search);
@@ -52,7 +55,7 @@ const MatchsImpro = () => {
               onClick={() => setActiveTab(1)}
               className={`match_button ${activeTab === 1 ? "active" : ""}`}
             >
-              PROCHAINE ÉDITION
+              DERNIÈRE EDITION
             </button>
             <button
               onClick={() => setActiveTab(2)}
@@ -71,7 +74,7 @@ const MatchsImpro = () => {
         <div>
           {/* Afficher la section en fonction de l'état activeTab */}
           {activeTab === 1 && (
-            <div className="match_pro">
+            /*<div className="match_pro">
               <div className="match_pro_text">
                 <div className="match_pro_title title">Édition 2025</div>
                 <div className="text_W">
@@ -98,6 +101,25 @@ const MatchsImpro = () => {
                   className="match_affiche_pic"
                   alt=""
                 ></img>
+              </div>
+            </div>
+            */
+            <div className="edition_container">
+              <div className="title">Retour en images sur l'édition 2025</div>
+
+              <div className="edition_photos">
+                <div className="carousel">
+                  <Carousel>
+                    {images25.map((src, index) => (
+                      <img
+                        key={index}
+                        src={src}
+                        className="pic_edition"
+                        alt={`Pic${24 + index}`}
+                      />
+                    ))}
+                  </Carousel>
+                </div>
               </div>
             </div>
           )}
@@ -230,7 +252,7 @@ const MatchsImpro = () => {
             onClick={() => setActiveTab(1)}
             className={`match_button ${activeTab === 1 ? "active" : ""}`}
           >
-            PROCHAINE ÉDITION
+            DERNIÈRE ÉDITION
           </button>
           <button
             onClick={() => setActiveTab(2)}
@@ -248,7 +270,7 @@ const MatchsImpro = () => {
         <div>
           {/* Afficher la section en fonction de l'état activeTab */}
           {activeTab === 1 && (
-            <div className="match_pro">
+            /*<div className="match_pro">
               <div className="match_affiche">
                 <img
                   src={match_2025}
@@ -276,6 +298,27 @@ const MatchsImpro = () => {
                     Entrée prix libre <br /> Ouverture des portes à 20h <br />{" "}
                     Buvette et restauration sur place.
                   </i>
+                </div>
+              </div>
+            </div>
+            */
+            <div className="edition_container">
+              <div className="title editon_title">
+                Retour en images sur l'édition 2025
+              </div>
+
+              <div className="edition_photos">
+                <div className="carousel">
+                  <Carousel>
+                    {images25.map((src, index) => (
+                      <img
+                        key={index}
+                        src={src}
+                        className="pic_edition"
+                        alt={`Pic${25 + index}`}
+                      />
+                    ))}
+                  </Carousel>
                 </div>
               </div>
             </div>
