@@ -82,7 +82,7 @@ const Footer = () => {
         </div>
         <div className="footer_links">
           <a className="link text_small_W" href="/programmation">
-            PROGRAMMATION 2025
+            PROGRAMMATION 2026
           </a>
           <a className="link text_small_W" href="/venir">
             COMMENT VENIR

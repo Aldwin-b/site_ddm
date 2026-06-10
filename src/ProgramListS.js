@@ -4,77 +4,77 @@ import exte_pic from "./images/exte.png";
 import mus_pic from "./images/musique.png";
 import { Link } from "react-router-dom";
 
-const ProgramListV = () => {
+const ProgramListS = () => {
   // Données des éléments
   const elements = [
     {
       id: 1,
       scene: "chap",
       heure: "10H30",
-      titre: "Ami·e·s des toiles",
+      titre: "Restitution stage d’improvisation",
       lien: "",
     },
     {
       id: 2,
       scene: "chap",
       heure: "11H30",
-      titre: "Babborco, l’ogre roi",
+      titre: "Une chaussure dans le bocal",
       lien: "",
     },
     {
       id: 3,
-      scene: "exte",
+      scene: "chap",
       heure: "14H00",
-      titre: "Pig Boy",
+      titre: "JOGALLI",
       lien: "Paramètre 4",
     },
     {
       id: 4,
-      scene: "chap",
+      scene: "exte",
       heure: "15H30",
-      titre: "Building",
+      titre: "Confession d’une femme hachée",
       lien: "Paramètre 4",
     },
     {
       id: 5,
       scene: "exte",
-      heure: "17H30",
-      titre: "Madame C",
+      heure: "17H15",
+      titre: "La grande peur",
       lien: "Paramètre 4",
     },
     {
       id: 6,
       scene: "exte",
-      heure: "19H00",
-      titre: "Le Futur est génial",
+      heure: "18H30",
+      titre: "Sauvages",
       lien: "Paramètre 4",
     },
     {
       id: 7,
       scene: "musique",
-      heure: "20H15",
-      titre: "S.O.W.A.T.",
+      heure: "20H00",
+      titre: "Poussez Pas Mémé",
       lien: "Paramètre 4",
     },
     {
       id: 8,
       scene: "chap",
       heure: "21H30",
-      titre: "Roméo et Juliette avec distance ",
+      titre: "VAPEURS",
       lien: "Paramètre 4",
     },
     {
       id: 9,
       scene: "musique",
       heure: "22H45",
-      titre: "Moloch monolyth",
+      titre: "Lucena",
       lien: "Paramètre 4",
     },
     {
       id: 10,
       scene: "musique",
       heure: "00H00",
-      titre: "Baron",
+      titre: "Lenny de Feo",
       lien: "Paramètre 4",
     },
 
@@ -123,4 +123,4 @@ const ProgramListV = () => {
   );
 };
 
-export default ProgramListV;
+export default ProgramListS;

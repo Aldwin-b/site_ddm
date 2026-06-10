@@ -29,7 +29,9 @@ const Main = () => {
         {
           <div id="prog" className="button_container">
             <button className="button">
-              <Link className="link">PROGRAMMATION À VENIR </Link>
+              <Link className="link" to="/programmation">
+                PROGRAMMATION
+              </Link>
             </button>
           </div>
         }
