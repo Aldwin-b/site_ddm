@@ -1,10 +1,12 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Header from "./Header.js";
-import Footer from "./Footer.js";
-import Main from "./Main.js";
-import Festival from "./Festival";
-import Benevoles from "./Benevoles";
+
+// Standardisation des imports (sans les extensions .js)
+import Header from "./Header";
+import Footer from "./Footer";
+import Main from "./Main";
+import Festival from "./Festival/Festival";
+import Benevoles from "./Benevoles/Benevoles";
 import MatchsImpro from "./MatchsImpro";
 import Cours from "./Cours";
 import Tarifs from "./Tarifs";
@@ -12,14 +14,16 @@ import Venir from "./Venir";
 import Progra from "./Progra";
 import Spectacle from "./Spectacle";
 import Engagement from "./Engagement";
-import Partenaires from "./Partenaires.js";
+import Partenaires from "./Partenaires";
+
 function App() {
   return (
     <div className="The_container">
-      <div className="Header">
-        <Header />
-      </div>
-      <div className="global_container">
+      {/* Le Header gère directement sa structure interne */}
+      <Header />
+
+      {/* Utilisation de <main> pour une meilleure sémantique SEO */}
+      <main className="global_container">
         <div className="App">
           <Routes>
             <Route path="/" element={<Main />} />
@@ -35,10 +39,9 @@ function App() {
             <Route path="/engagement" element={<Engagement />} />
           </Routes>
         </div>
-      </div>
-      <div className="Footer">
-        <Footer />
-      </div>
+      </main>
+
+      <Footer />
     </div>
   );
 }

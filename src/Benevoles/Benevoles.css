@@ -1,0 +1,86 @@
+/**********************************
+*********** DESIGN DESKTOP *************
+***********************************/
+
+.benevoles_container.is-desktop {
+  display: flex;
+  min-height: 75vh;
+  gap: 40px;
+}
+
+.benevoles_container.is-desktop .benevoles_column1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.benevoles_container.is-desktop .benevoles_column2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.benevoles_container.is-desktop .pic_bene {
+  object-fit: cover;
+  display: flex;
+  aspect-ratio: 1/1;
+  height: 30vh;
+  padding: 0.5%;
+}
+
+/* Styles textuels communs aux deux mondes */
+.benevole_title {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: start;
+}
+.benevole_text {
+  text-align: start;
+}
+.benevole_text .text_W {
+  display: block;
+  margin-bottom: 24px;
+}
+.benevole_text .text_W:last-child {
+  margin-bottom: 0;
+}
+
+/**********************************
+*********** DESIGN MOBILE *************
+***********************************/
+
+.benevoles_container.is-mobile {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.benevoles_container.is-mobile .benevoles_column1 {
+  display: contents; /* Garde ton astuce magique pour l'ordre */
+}
+
+.benevoles_container.is-mobile .benevole_title {
+  order: 1;
+}
+
+.benevoles_container.is-mobile .benevoles_column2 {
+  order: 2;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+}
+
+.benevoles_container.is-mobile .benevole_text {
+  order: 3;
+}
+
+.benevoles_container.is-mobile .pic_bene {
+  flex: 1;
+  width: 25vw;
+  margin: 2.5px;
+  aspect-ratio: 1/1;
+  height: auto;
+}

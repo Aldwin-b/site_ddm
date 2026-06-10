@@ -4,17 +4,23 @@ import { Link } from "react-router-dom";
 const Main = () => {
   return (
     <div className="main_container">
+      {/* Section Image */}
       <div id="main_picture" className="main_picture_container">
-        <img src={main_picture} className="main_picture" alt="" />
+        <img
+          src={main_picture}
+          className="main_picture"
+          alt="Festival Drôles de Mômes au Lac de Montendre"
+        />
       </div>
+
+      {/* Section Contenu Texte */}
       <div className="main_logo_text">
-        <div className=" title main_title"></div>
         <div id="text_prog" className="main_text_prog_container">
           <span className="text_W">
             <b>
               La vingtième édition du festival Drôles de Mômes aura lieu les 10
               et 11 juillet 2026 sur un tout nouveau site !
-            </b>{" "}
+            </b>
             <br /> <br />
             Depuis 10 ans, notre festival avait posé ses valises sur une des
             rives du Lac de Montendre et nous y adorons son côté bucolique.
@@ -26,15 +32,13 @@ const Main = () => {
             chaleur.
           </span>
         </div>
-        {
-          <div id="prog" className="button_container">
-            <button className="button">
-              <Link className="link" to="/programmation">
-                PROGRAMMATION
-              </Link>
-            </button>
-          </div>
-        }
+
+        {/* Bouton de redirection direct */}
+        <div id="prog" className="button_container">
+          <Link className="button" to="/programmation">
+            PROGRAMMATION
+          </Link>
+        </div>
       </div>
     </div>
   );

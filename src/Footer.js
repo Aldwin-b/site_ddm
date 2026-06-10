@@ -1,247 +1,195 @@
-import React, { useState, useEffect } from "react";
-//import Navbar from "react-bootstrap/Navbar";
-//import NavDropdown from "react-bootstrap/NavDropdown";
-
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useIsMobile } from "./hooks/useIsMobile";
 
 import ddm from "./images/ddm_pic.png";
-import ddm_pic_mobile from "./images/ddm_pic_mobile.png";
-
+import ddm_mobile from "./images/ddm_pic_mobile.png";
 import menu from "./images/menu.png";
-//import prog from "./images/icone_prog.png";
 import lieu from "./images/icone_lieu.png";
 import billets from "./images/icone_billet.png";
-
 import fb_w from "./images/fb_w.png";
 import insta_w from "./images/insta_w.png";
 import mail from "./images/mail.png";
-import "./site_styles.css";
+
+const SOCIAL = [
+  {
+    src: fb_w,
+    alt: "Facebook",
+    url: "https://www.facebook.com/profile.php?id=100063738302856",
+  },
+  {
+    src: insta_w,
+    alt: "Instagram",
+    url: "https://www.instagram.com/droles2momes/",
+  },
+];
 
 const Footer = () => {
-  const screenWidth = window.innerWidth;
-  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
-  const navFb = () => {
-    if (screenWidth >= 800) {
-      window.open(
-        "https://www.facebook.com/profile.php?id=100063738302856",
-        "_blank",
-        "noopener,noreferrer",
-      );
-    } else {
-      window.open("fb://page/115574428470193", "_blank", "noopener,noreferrer");
-    }
-  };
-  const navInsta = () => {
-    if (screenWidth >= 800) {
-      window.open(
-        "https://www.instagram.com/droles2momes/",
-        "_blank",
-        "noopener,noreferrer",
-      );
-    } else {
-      window.open(
-        "instagram://user?username=droles2momes",
-        "_blank",
-        "noopener,noreferrer",
-      );
-    }
-  };
+  const isMobile = useIsMobile();
+  const [menuOpen, setMenuOpen] = useState(false);
 
+  // Bloquer le scroll quand le menu est ouvert
   useEffect(() => {
-    if (isDropdownVisible) {
-      document.body.style.overflow = "hidden";
-    } else {
+    document.body.style.overflow = menuOpen ? "hidden" : "auto";
+    return () => {
       document.body.style.overflow = "auto";
-    }
-  }, [isDropdownVisible]);
+    };
+  }, [menuOpen]);
 
-  const handleDropdownToggle = () => {
-    setIsDropdownVisible(!isDropdownVisible);
-  };
-
-  const handleOverlayClose = () => {
-    setIsDropdownVisible(false);
-  };
-
-  const handleOverlayClick = (event) => {
-    // Empêcher la propagation du clic à l'élément parent
-    event.stopPropagation();
-  };
-  const handleMailClick = (e) => {
-    e.preventDefault();
-    window.open("mailto:machinabulles@orange.fr");
-  };
-
-  if (screenWidth >= 800) {
+  if (!isMobile) {
     return (
-      <div className="footer">
+      <footer className="footer">
         <div className="footer_logo">
-          <a href="/">
-            <img className="footer_img" src={ddm} alt="" />
-          </a>
+          <Link to="/">
+            <img className="footer_img" src={ddm} alt="Drôles de Mômes" />
+          </Link>
         </div>
+
         <div className="footer_links">
-          <a className="link text_small_W" href="/programmation">
+          <Link className="link text_small_W" to="/programmation">
             PROGRAMMATION 2026
-          </a>
-          <a className="link text_small_W" href="/venir">
+          </Link>
+          <Link className="link text_small_W" to="/venir">
             COMMENT VENIR
-          </a>
-          <a className="link text_small_W" href="/tarifs">
+          </Link>
+          <Link className="link text_small_W" to="/tarifs">
             TARIFS
-          </a>
+          </Link>
         </div>
+
         <div className="footer_contact">
           <div className="footer_text">NOUS CONTACTER</div>
-          <a href="mailto:machinabulles@orange.fr" onClick={handleMailClick}>
+          <a href="mailto:machinabulles@orange.fr">
             <img
               className="footer_mail"
-              alt="Logo mail pour contacter DDM"
               src={mail}
+              alt="Envoyer un email à DDM"
             />
           </a>
-          <div className="footer_placeholder"></div>
         </div>
+
         <div className="footer_networks">
           <div className="footer_text">SUIVEZ NOUS</div>
           <div className="footer_nw_logos">
-            <img
-              className="link_rs logo_rs"
-              src={fb_w}
-              alt="Facebook"
-              onClick={navFb}
-              style={{ cursor: "pointer" }}
-            />
-            <img
-              className="link_rs logo_rs"
-              src={insta_w}
-              alt="Instagram"
-              onClick={navInsta}
-              style={{ cursor: "pointer" }}
-            />
-          </div>
-          <div className="footer_placeholder"></div>
-        </div>
-      </div>
-    );
-  } else {
-    return (
-      <nav>
-        <div className="footer_mobile">
-          <div
-            className={`menu navBar_text ${isDropdownVisible ? "active" : ""}`}
-          >
-            {/*} <Link className="menu_item" to="/programmation">
-              <img className="menu_logo" src={prog} alt="" />
-              <div className="menu_text"> PROG</div>
-            </Link>{" "}*/}
-            <Link className="menu_item" to="/venir">
-              <img className="menu_logo" src={lieu} alt="" />
-              <div className="menu_text">VENIR</div>
-            </Link>
-            <Link className="menu_item" to="/tarifs">
-              <img className="menu_logo" src={billets} alt="" />
-              <div className="menu_text">TARIFS</div>
-            </Link>
-            <div className="menu_item">
-              <img
-                className="menu_logo"
-                src={menu}
-                alt=""
-                onClick={handleDropdownToggle}
-              />
-              <div className="menu_text">MENU</div>
-            </div>
-            {isDropdownVisible && (
-              <div className="overlay" onClick={handleOverlayClick}>
-                <div className="overlay_main">
-                  <div className="overlay_header">
-                    <a className="menu_link" href="/">
-                      <img className="logoW" src={ddm_pic_mobile} alt="" />
-                    </a>
-                    <div className="text_overlay">
-                      Les 10 & 11 juillet 2026 au lac de Montendre
-                    </div>
-                    {/*<a className="link" href="/programmation">
-                      <div className="nav_sub">PROGRAMMATION</div>
-                    </a>*/}
-                  </div>
-                  <div className="nav_mobile">
-                    <div className="nav_menu">
-                      <div className="nav_title">
-                        <a className="link" href="/festival">
-                          LE FESTIVAL
-                        </a>
-                      </div>
-                      <div className="nav_sub">
-                        <a className="link" href="/festival">
-                          PRÉSENTATION
-                        </a>
-                      </div>
-                      <a className="link" href="/engagement">
-                        <div className="nav_sub">ENGAGEMENTS</div>
-                      </a>
-                      <a className="link" href="/benevoles">
-                        <div className="nav_sub">LES BÉNÉVOLES</div>
-                      </a>
-                    </div>
-                    <div className="nav_menu">
-                      <a className="link" href="/matchsimpro">
-                        <div className="nav_title">LES MATCHS D'IMPRO</div>
-                      </a>
-                    </div>
-                    <div className="nav_menu">
-                      <a className="link" href="/cours">
-                        <div className="nav_title">LES COURS</div>{" "}
-                      </a>
-                    </div>
-                    <div className="nav_menu">
-                      <a className="link" href="/tarifs">
-                        <div className="nav_title">INFORMATIONS</div>
-                      </a>
-                      <a className="link" href="/tarifs">
-                        <div className="nav_sub">TARIFS</div>
-                      </a>
-                      <a className="link" href="/venir">
-                        <div className="nav_sub">COMMENT VENIR</div>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="overlay_footer">
-                    <a className="link_rs" href="fb://page/115574428470193">
-                      <img className="rs_w" src={fb_w} alt="Facebook" />
-                    </a>
-                    <a
-                      className="link_rs"
-                      href="instagram://user?username=droles2momes"
-                    >
-                      <img className="rs_w" src={insta_w} alt="Instagram" />
-                    </a>
-                    <a
-                      className="link_rs"
-                      href="mailto:machinabulles@orange.fr"
-                      onClick={handleMailClick}
-                    >
-                      <img
-                        className="rs_w"
-                        alt="Logo mail pour contacter DDM"
-                        src={mail}
-                      />
-                    </a>
-                  </div>
-                </div>
-                <div className="close_container">
-                  <div className="close_button" onClick={handleOverlayClose}>
-                    X
-                  </div>
-                </div>
-              </div>
-            )}
+            {SOCIAL.map(({ src, alt, url }) => (
+              <a key={alt} href={url} target="_blank" rel="noopener noreferrer">
+                <img className="logo_rs" src={src} alt={alt} />
+              </a>
+            ))}
           </div>
         </div>
-      </nav>
+      </footer>
     );
   }
+
+  return (
+    <nav>
+      <div className="footer_mobile">
+        <div className="menu">
+          <Link className="menu_item" to="/venir">
+            <img className="menu_logo" src={lieu} alt="" />
+            <div className="menu_text">VENIR</div>
+          </Link>
+          <Link className="menu_item" to="/tarifs">
+            <img className="menu_logo" src={billets} alt="" />
+            <div className="menu_text">TARIFS</div>
+          </Link>
+          <button
+            className="menu_item menu_item--button"
+            onClick={() => setMenuOpen(true)}
+          >
+            <img className="menu_logo" src={menu} alt="" />
+            <div className="menu_text">MENU</div>
+          </button>
+        </div>
+      </div>
+
+      {menuOpen && (
+        <div className="overlay" onClick={() => setMenuOpen(false)}>
+          {/* stopPropagation pour ne pas fermer en cliquant dans le menu */}
+          <div className="overlay_main" onClick={(e) => e.stopPropagation()}>
+            <div className="overlay_header">
+              <Link
+                className="menu_link"
+                to="/"
+                onClick={() => setMenuOpen(false)}
+              >
+                <img className="logoW" src={ddm_mobile} alt="Drôles de Mômes" />
+              </Link>
+              <div className="text_overlay">
+                Les 10 & 11 juillet 2026 au lac de Montendre
+              </div>
+            </div>
+
+            <nav className="nav_mobile">
+              {[
+                {
+                  title: "LE FESTIVAL",
+                  to: "/festival",
+                  subs: [
+                    { to: "/festival", label: "PRÉSENTATION" },
+                    { to: "/engagement", label: "ENGAGEMENTS" },
+                    { to: "/benevoles", label: "LES BÉNÉVOLES" },
+                  ],
+                },
+                { title: "LES MATCHS D'IMPRO", to: "/matchsimpro" },
+                { title: "LES COURS", to: "/cours" },
+                {
+                  title: "INFORMATIONS",
+                  to: "/tarifs",
+                  subs: [
+                    { to: "/tarifs", label: "TARIFS" },
+                    { to: "/venir", label: "COMMENT VENIR" },
+                  ],
+                },
+              ].map(({ title, to, subs }) => (
+                <div key={title} className="nav_menu">
+                  <Link
+                    className="link"
+                    to={to}
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    <div className="nav_title">{title}</div>
+                  </Link>
+                  {subs?.map(({ to, label }) => (
+                    <Link
+                      key={to}
+                      className="link"
+                      to={to}
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      <div className="nav_sub">{label}</div>
+                    </Link>
+                  ))}
+                </div>
+              ))}
+            </nav>
+
+            <div className="overlay_footer">
+              {SOCIAL.map(({ src, alt, url }) => (
+                <a
+                  key={alt}
+                  className="link_rs"
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img className="rs_w" src={src} alt={alt} />
+                </a>
+              ))}
+              <a className="link_rs" href="mailto:machinabulles@orange.fr">
+                <img className="rs_w" src={mail} alt="Email" />
+              </a>
+            </div>
+          </div>
+
+          <div className="close_container" onClick={() => setMenuOpen(false)}>
+            ✕
+          </div>
+        </div>
+      )}
+    </nav>
+  );
 };
 
 export default Footer;

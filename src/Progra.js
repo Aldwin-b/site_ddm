@@ -92,6 +92,7 @@ const Progra = () => {
             </div>
             <div className="progra_col">
               <div className="progra_title">
+                caqse
                 <div className="progra_title_day "> SAMEDI 10</div>
               </div>
               <div className="progra_col_main">
