@@ -7,7 +7,7 @@ import Footer from "./Footer";
 import Main from "./Main";
 import Festival from "./Festival/Festival";
 import Benevoles from "./Benevoles/Benevoles";
-import MatchsImpro from "./MatchsImpro";
+import MatchsImpro from "./MatchsImpro/MatchsImpro";
 import Cours from "./Cours";
 import Tarifs from "./Tarifs";
 import Venir from "./Venir";
